@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDI | Plano de Desenvolvimento Individual | Base de Campeão</title>
+<link rel="icon" type="image/png" href="favicon-bdc.png">
+<link rel="apple-touch-icon" href="favicon-bdc.png">
+<meta name="description" content="Diagnóstico completo e plano personalizado para o desenvolvimento do seu filho no futebol. Análise em 7 pilares e uma equipe caminhando junto com a família.">
+
+<!-- Open Graph (WhatsApp, Instagram, Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.basedecampeao.com.br/pdi">
+<meta property="og:title" content="PDI | Plano de Desenvolvimento Individual">
+<meta property="og:description" content="Diagnóstico completo e plano personalizado para o desenvolvimento do seu filho no futebol. Clareza pra família tomar as melhores decisões.">
+<meta property="og:image" content="https://www.basedecampeao.com.br/pdi/og-pdi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Base de Campeão">
+<meta property="og:locale" content="pt_BR">
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PDI | Plano de Desenvolvimento Individual">
+<meta name="twitter:description" content="Diagnóstico completo e plano personalizado para o desenvolvimento do seu filho no futebol.">
+<meta name="twitter:image" content="https://www.basedecampeao.com.br/pdi/og-pdi.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#0B1D33;
+    --navy-900:#0E2340;
+    --navy-800:#14304F;
+    --navy-700:#1D3E63;
+    --gold:#C9A24B;
+    --gold-bright:#DBB863;
+    --cream:#F7F5F0;
+    --paper:#FBFAF7;
+    --ink:#182234;
+    --muted:#5A6577;
+    --line:#E4DFD4;
+    --wa:#25D366;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);
+    line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em;text-transform:uppercase;line-height:.98}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .narrow{max-width:760px;margin:0 auto;padding:0 24px}
+
+  .slash-top{height:14px;background:var(--navy-900);position:relative}
+  .slash-top::before{content:"";position:absolute;left:0;top:0;height:100%;width:38%;background:var(--gold);clip-path:polygon(0 0,100% 0,86% 100%,0 100%)}
+
+  .eyebrow{font-family:'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;font-weight:700;color:var(--gold);margin-bottom:16px;display:block}
+  .eyebrow.dark{color:var(--navy-800)}
+
+  /* buttons */
+  .btn{display:inline-block;background:var(--gold);color:var(--navy-950);font-weight:700;font-size:1.02rem;padding:17px 34px;border-radius:4px;text-decoration:none;transition:transform .15s ease,background .15s ease;box-shadow:0 8px 24px rgba(201,162,75,.28);border:none;cursor:pointer}
+  .btn:hover{background:var(--gold-bright);transform:translateY(-2px)}
+  .btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+  .btn-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:#fff;font-weight:700;font-size:1rem;padding:16px 28px;border-radius:4px;text-decoration:none;border:1.5px solid rgba(255,255,255,.35);transition:border-color .15s,background .15s}
+  .btn-ghost:hover{border-color:var(--gold);background:rgba(201,162,75,.1)}
+  .btn-ghost svg{width:20px;height:20px;fill:var(--gold)}
+  .btn-ghost.on-light{color:var(--navy-900);border-color:var(--navy-800)}
+  .btn-ghost.on-light:hover{border-color:var(--gold);background:rgba(201,162,75,.08)}
+  .cta-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:6px}
+  .btn-sub{display:block;margin-top:14px;font-size:.82rem;color:var(--muted);font-weight:400}
+  .btn-sub.light{color:rgba(255,255,255,.62)}
+
+  /* HERO */
+  header.hero{background:var(--navy-900);color:#fff;position:relative;padding:70px 0 80px;overflow:hidden}
+  header.hero::after{content:"";position:absolute;right:-140px;top:-140px;width:420px;height:420px;background:radial-gradient(circle,rgba(201,162,75,.16),transparent 65%);pointer-events:none}
+  .brand-logo{height:112px;width:auto;display:block;margin-bottom:24px}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  header.hero h1{font-size:clamp(2.7rem,6.4vw,4.6rem);color:#fff}
+  header.hero h1 .gold{color:var(--gold)}
+  .hero-sub{font-size:1.14rem;color:rgba(255,255,255,.82);margin:26px 0 30px;max-width:30em}
+  .hero-meta{margin-top:30px;display:flex;gap:26px;flex-wrap:wrap;font-size:.82rem;color:rgba(255,255,255,.6);letter-spacing:.02em}
+  .hero-meta b{color:#fff;font-weight:700}
+
+  .report-mock{background:var(--paper);border-radius:8px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.4);transform:rotate(2deg)}
+  .report-mock .rm-band{height:56px;background:var(--navy-900);position:relative}
+  .report-mock .rm-band::before{content:"";position:absolute;left:0;top:0;height:100%;width:44%;background:var(--gold);clip-path:polygon(0 0,100% 0,80% 100%,0 100%)}
+  .report-mock .rm-body{padding:22px}
+  .rm-title{font-family:'Anton',sans-serif;text-transform:uppercase;color:var(--navy-900);font-size:1.05rem;line-height:1;margin-bottom:14px}
+  .rm-line{height:8px;background:var(--line);border-radius:4px;margin:9px 0}
+  .rm-line.s{width:60%}.rm-line.m{width:82%}
+  .rm-chip{display:inline-block;font-family:'Anton',sans-serif;font-size:.7rem;color:var(--gold);background:var(--navy-900);padding:5px 10px;border-radius:3px;margin:14px 6px 0 0;letter-spacing:.04em}
+
+  section{padding:76px 0}
+  .sec-head{max-width:640px;margin-bottom:44px}
+  .sec-head h2{font-size:clamp(1.9rem,4.4vw,2.9rem);color:var(--navy-900)}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head p{color:var(--muted);font-size:1.06rem;margin-top:16px}
+
+  .dor{background:var(--cream)}
+  .q-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
+  .q-card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);padding:22px 24px;border-radius:4px;font-size:1.06rem;font-weight:500;color:var(--navy-800)}
+  .dor-close{margin-top:34px;font-size:1.15rem;font-weight:500;color:var(--navy-900);text-align:center}
+
+  .isnt{background:var(--navy-900);color:#fff}
+  .isnt .sec-head h2{color:#fff}
+  .isnt-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:10px}
+  .isnt-col{background:var(--navy-800);border-radius:6px;padding:30px}
+  .isnt-col h3{font-size:1.15rem;color:var(--gold);margin-bottom:18px;letter-spacing:.06em}
+  .isnt-col.neg h3{color:#fff;opacity:.55}
+  .isnt-col ul{list-style:none}
+  .isnt-col li{padding:9px 0 9px 30px;position:relative;color:rgba(255,255,255,.9)}
+  .isnt-col li::before{position:absolute;left:0;top:8px;font-family:'Anton';font-size:.9rem}
+  .isnt-col.pos li::before{content:"✓";color:var(--gold)}
+  .isnt-col.neg li{color:rgba(255,255,255,.55)}
+  .isnt-col.neg li::before{content:"✕";color:rgba(255,255,255,.4)}
+
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:10px}
+  .step{position:relative}
+  .step .num{font-family:'Anton';font-size:2.6rem;color:var(--gold);line-height:1}
+  .step h3{font-size:1.1rem;color:var(--navy-900);margin:12px 0 8px}
+  .step p{color:var(--muted);font-size:.95rem}
+  .step:not(:last-child)::after{content:"";position:absolute;top:18px;right:-13px;width:26px;height:2px;background:var(--line)}
+
+  .pillars{background:var(--cream)}
+  .p-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .pillar{background:var(--navy-900);color:#fff;border-radius:6px;padding:26px 22px;position:relative;overflow:hidden;min-height:150px;transition:transform .18s ease}
+  .pillar:hover{transform:translateY(-4px)}
+  .pillar::before{content:"";position:absolute;left:0;bottom:0;width:100%;height:5px;background:var(--gold)}
+  .pillar .pn{font-family:'Anton';font-size:.8rem;color:var(--gold);letter-spacing:.1em}
+  .pillar h3{font-size:1.32rem;margin:14px 0 8px;color:#fff}
+  .pillar p{font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.45}
+  .p-grid .pillar.wide{grid-column:span 2;background:var(--navy-800)}
+
+  .deliv-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .deliv-list{list-style:none}
+  .deliv-list li{padding:15px 0 15px 40px;position:relative;border-bottom:1px solid var(--line);font-size:1.06rem;font-weight:500;color:var(--navy-800)}
+  .deliv-list li::before{content:"";position:absolute;left:0;top:19px;width:22px;height:22px;background:var(--gold);border-radius:3px;clip-path:polygon(50% 0,100% 22%,100% 68%,50% 100%,0 68%,0 22%)}
+  .deliv-pages{position:relative;height:340px}
+  .deliv-pages .pg{position:absolute;width:74%;background:#fff;border:1px solid var(--line);border-radius:6px;box-shadow:0 18px 40px rgba(20,30,50,.14);overflow:hidden}
+  .deliv-pages .pg .band{height:34px;background:var(--navy-900);position:relative}
+  .deliv-pages .pg .band::before{content:"";position:absolute;left:0;top:0;height:100%;width:44%;background:var(--gold);clip-path:polygon(0 0,100% 0,78% 100%,0 100%)}
+  .deliv-pages .pg .inner{padding:16px}
+  .deliv-pages .pg .l{height:6px;background:var(--line);border-radius:3px;margin:7px 0}
+  .deliv-pages .pg1{top:0;left:0;z-index:2}
+  .deliv-pages .pg2{top:40px;left:26%;z-index:1;transform:rotate(4deg)}
+
+  .cases{background:var(--navy-950);color:#fff}
+  .cases .sec-head h2{color:#fff}
+  .c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .case{background:var(--navy-800);border-radius:8px;padding:30px;border-top:4px solid var(--gold)}
+  .case .age{font-family:'Anton';font-size:2.2rem;color:var(--gold);line-height:1}
+  .case .loc{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:6px 0 16px}
+  .case p{color:rgba(255,255,255,.85);font-size:.98rem}
+
+  .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .fit-col{border-radius:6px;padding:32px}
+  .fit-col.yes{background:var(--cream);border:1px solid var(--line)}
+  .fit-col.no{background:#fff;border:1px solid var(--line)}
+  .fit-col h3{font-size:1.15rem;margin-bottom:18px}
+  .fit-col.yes h3{color:var(--navy-900)}
+  .fit-col.no h3{color:var(--muted)}
+  .fit-col ul{list-style:none}
+  .fit-col li{padding:8px 0 8px 28px;position:relative;color:var(--navy-800)}
+  .fit-col.yes li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+  .fit-col.no li{color:var(--muted)}
+  .fit-col.no li::before{content:"✕";position:absolute;left:0;color:var(--muted);font-size:.8rem;top:11px}
+
+  /* offer */
+  .offer{background:var(--navy-900);color:#fff;text-align:center}
+  .offer .eyebrow{color:var(--gold)}
+  .price-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;max-width:820px;margin:0 auto;text-align:left}
+  .price-card{background:var(--navy-800);border:1px solid var(--navy-700);border-radius:12px;padding:38px 34px;position:relative;overflow:hidden}
+  .price-card::before{content:"";position:absolute;left:0;top:0;width:100%;height:6px;background:var(--gold)}
+  .price-card .ptag{display:inline-block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:5px 11px;border-radius:20px;margin-bottom:18px}
+  .price-card .ptag.main{background:var(--gold);color:var(--navy-950)}
+  .price-card .plabel{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .price-card .pval{font-family:'Anton';font-size:3.6rem;color:#fff;line-height:1;margin:8px 0}
+  .price-card .pval span.cur{color:var(--gold);font-size:1.6rem;vertical-align:top}
+  .price-card .pval span.per{font-family:'DM Sans';font-size:1rem;color:rgba(255,255,255,.6);font-weight:500;letter-spacing:0;text-transform:none}
+  .price-card .pnote{color:rgba(255,255,255,.72);font-size:.94rem}
+  .offer .sec-head h2{color:#fff}
+  .price-card .pfeat{list-style:none;margin-top:6px}
+  .price-card .pfeat li{padding:7px 0 7px 26px;position:relative;color:rgba(255,255,255,.86);font-size:.93rem;line-height:1.4}
+  .price-card .pfeat li::before{content:"✓";position:absolute;left:0;top:7px;color:var(--gold);font-weight:700}
+  .stage-note{max-width:640px;margin:28px auto 0;color:rgba(255,255,255,.82);font-size:1.04rem;text-align:center}
+  .offer-cta{margin-top:38px}
+  .anchor{max-width:600px;margin:30px auto 0;color:rgba(255,255,255,.72);font-size:1.02rem}
+  .guarantee{margin-top:20px;font-size:.86rem;color:rgba(255,255,255,.55)}
+
+  .faq details{border-bottom:1px solid var(--line);padding:6px 0}
+  .faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;font-weight:700;font-size:1.08rem;color:var(--navy-900)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-family:'Anton';font-size:1.5rem;color:var(--gold);transition:transform .2s}
+  .faq details[open] summary::after{content:"–"}
+  .faq details p{color:var(--muted);padding:0 40px 22px 0;font-size:1rem}
+
+  .final{background:var(--navy-950);color:#fff;text-align:center;padding:88px 0}
+  .final h2{font-size:clamp(2.1rem,5vw,3.4rem);color:#fff;max-width:14em;margin:0 auto 14px}
+  .final h2 .gold{color:var(--gold)}
+  .final p{color:rgba(255,255,255,.72);font-size:1.1rem;max-width:32em;margin:0 auto 34px}
+  .final .cta-row{justify-content:center}
+  .scarcity{margin-top:26px;font-size:.86rem;letter-spacing:.06em;color:var(--gold);text-transform:uppercase;font-weight:700}
+
+  footer{background:#08182B;color:rgba(255,255,255,.5);padding:40px 0;font-size:.82rem;text-align:center}
+  footer .footer-logo{height:70px;width:auto;display:block;margin:0 auto 16px;opacity:.95}
+  footer a{color:var(--gold);text-decoration:none}
+
+  .wa-float{position:fixed;right:20px;bottom:20px;z-index:50;background:var(--gold);color:var(--navy-950);width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(201,162,75,.4);text-decoration:none;transition:transform .15s,background .15s}
+  .wa-float:hover{transform:scale(1.08);background:var(--gold-bright)}
+  .wa-float svg{width:30px;height:30px;fill:var(--navy-950)}
+
+  @media(max-width:860px){
+    .hero-grid{grid-template-columns:1fr;gap:40px}
+    .report-mock{max-width:360px;margin:0 auto;transform:rotate(1.5deg)}
+    .q-list{grid-template-columns:1fr}
+    .isnt-grid{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .step:not(:last-child)::after{display:none}
+    .p-grid{grid-template-columns:1fr 1fr}
+    .deliv-grid{grid-template-columns:1fr;gap:40px}
+    .deliv-pages{height:300px;max-width:360px;margin:0 auto}
+    .c-grid{grid-template-columns:1fr}
+    .fit-grid{grid-template-columns:1fr}
+    .price-wrap{grid-template-columns:1fr;max-width:460px}
+  }
+  @media(max-width:480px){
+    section{padding:56px 0}
+    .steps{grid-template-columns:1fr}
+    .p-grid{grid-template-columns:1fr}
+    .p-grid .pillar.wide{grid-column:span 1}
+    .price-card{padding:30px 24px}
+    .cta-row{flex-direction:column;align-items:stretch}
+    .cta-row .btn,.cta-row .btn-ghost{text-align:center;justify-content:center}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{transition:none!important;scroll-behavior:auto!important}
+    .report-mock{transform:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <img src="logo-bdc.png" alt="Base de Campeão" class="brand-logo">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Plano de Desenvolvimento Individual</span>
+        <h1>Seu filho tem o sonho.<br><span class="gold">Falta o plano.</span></h1>
+        <p class="hero-sub">O PDI é um processo completo de diagnóstico e desenvolvimento para atletas de futebol e suas famílias: análise profunda em 7 pilares, um plano personalizado e uma equipe caminhando junto na jornada.</p>
+        <div class="cta-row">
+          <a href="https://www.basedecampeao.com.br/pdi" class="btn">Quero o diagnóstico do meu filho</a>
+          <a href="https://wa.me/5551998800521?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." class="btn-ghost">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+            Tenho dúvidas, quero falar com um especialista
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span><b>7</b> pilares de análise e uma equipe caminhando junto com a sua família</span>
+        </div>
+      </div>
+      <div class="report-mock" aria-hidden="true">
+        <div class="rm-band"></div>
+        <div class="rm-body">
+          <div class="rm-title">PDI - Plano de<br>Desenvolvimento<br>Individual</div>
+          <div class="rm-line m"></div>
+          <div class="rm-line"></div>
+          <div class="rm-line s"></div>
+          <div>
+            <span class="rm-chip">Contexto</span><span class="rm-chip">Técnico</span>
+            <span class="rm-chip">Tático</span><span class="rm-chip">Físico</span>
+            <span class="rm-chip">Mental</span><span class="rm-chip">Nutricional</span>
+            <span class="rm-chip">Familiar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="slash-top"></div>
+
+<!-- DOR -->
+<section class="dor">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow dark">Se você já se perguntou isso</span>
+      <h2>As dúvidas que tiram o sono de quem acompanha a formação</h2>
+    </div>
+    <div class="q-list">
+      <div class="q-card">Será que o clube atual é o certo pra ele agora?</div>
+      <div class="q-card">Ele está treinando demais? Ou de menos?</div>
+      <div class="q-card">A gente cobra resultado ou deixa fluir?</div>
+      <div class="q-card">Como saber se ele está evoluindo de verdade?</div>
+      <div class="q-card">Estamos perdendo alguma janela importante?</div>
+      <div class="q-card">Qual é o próximo passo? E quando dar?</div>
+    </div>
+    <p class="dor-close">Se alguma dessas perguntas já passou pela sua cabeça, você está no lugar certo.</p>
+  </div>
+</section>
+
+<!-- O QUE É / NÃO É -->
+<section class="isnt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">O que é o PDI</span>
+      <h2>Clareza pra decidir. Direção pra caminhar.</h2>
+      <p style="color:rgba(255,255,255,.78)">Mais do que apontar pontos fortes e de atenção, a gente acompanha a execução do plano pra garantir que ele saia do papel. O maior diferencial na formação não é só o talento. É a qualidade das decisões tomadas ao longo da jornada.</p>
+    </div>
+    <div class="isnt-grid">
+      <div class="isnt-col pos">
+        <h3>O que o PDI é</h3>
+        <ul>
+          <li>Um diagnóstico profundo do momento atual do atleta</li>
+          <li>Um plano de desenvolvimento personalizado</li>
+          <li>Direção clara pra família tomar decisões melhores</li>
+          <li>Acompanhamento contínuo da evolução</li>
+        </ul>
+      </div>
+      <div class="isnt-col neg">
+        <h3>O que o PDI não é</h3>
+        <ul>
+          <li>Não é escolinha nem substitui o treino do clube</li>
+          <li>Não é curso gravado ou material genérico</li>
+          <li>Não é promessa de contrato ou de peneira garantida</li>
+          <li>Não é atalho, é processo bem conduzido</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow dark">Como funciona o diagnóstico</span>
+      <h2>Um mês pra entender o atleta por inteiro</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>Grupo oficial</h3><p>Criamos um grupo exclusivo no WhatsApp com família, atleta e equipe BDC. É o canal de comunicação durante todo o processo.</p></div>
+      <div class="step"><div class="num">2</div><h3>Reunião de diagnóstico</h3><p>Conversa individual com atleta e família pra entender histórico, objetivos, rotina, clube, desafios e dúvidas.</p></div>
+      <div class="step"><div class="num">3</div><h3>Análise completa</h3><p>Avaliação estratégica em 7 pilares, cruzando contexto, técnica, tática, físico, mente, nutrição e família.</p></div>
+      <div class="step"><div class="num">4</div><h3>Entrega do plano</h3><p>Reunião de entrega do relatório personalizado, com prioridades da temporada e planos de curto, médio e longo prazo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PILARES -->
+<section class="pillars">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow dark">A profundidade da análise</span>
+      <h2>Olhamos o atleta inteiro. Não só a bola.</h2>
+    </div>
+    <div class="p-grid">
+      <div class="pillar"><div class="pn">01</div><h3>Contexto</h3><p>Idade, momento de carreira, ambiente, rotina e planejamento de temporada.</p></div>
+      <div class="pillar"><div class="pn">02</div><h3>Técnico</h3><p>Fundamentos, características e prioridades de desenvolvimento.</p></div>
+      <div class="pillar"><div class="pn">03</div><h3>Tático</h3><p>Leitura de jogo, tomada de decisão, posicionamento e inteligência.</p></div>
+      <div class="pillar"><div class="pn">04</div><h3>Físico</h3><p>Crescimento, maturação, carga, recuperação e composição corporal.</p></div>
+      <div class="pillar"><div class="pn">05</div><h3>Mental</h3><p>Confiança, competitividade, concentração e comportamento.</p></div>
+      <div class="pillar"><div class="pn">06</div><h3>Nutricional</h3><p>Hábitos, hidratação, recuperação e organização alimentar.</p></div>
+      <div class="pillar wide"><div class="pn">07</div><h3>Familiar</h3><p>O pilar que muda tudo: o papel da família, o ambiente, a comunicação e o processo de tomada de decisão em casa.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTREGA -->
+<section>
+  <div class="wrap">
+    <div class="deliv-grid">
+      <div>
+        <span class="eyebrow dark">O que a família recebe</span>
+        <div class="sec-head" style="margin-bottom:24px"><h2>Um relatório que você guarda pra vida toda</h2></div>
+        <ul class="deliv-list">
+          <li>Diagnóstico geral do momento do atleta</li>
+          <li>Principais pontos fortes e pontos de atenção</li>
+          <li>Perfil comportamental do atleta</li>
+          <li>Prioridades da temporada</li>
+          <li>Plano de ação de curto, médio e longo prazo</li>
+          <li>Orientações específicas para a família</li>
+          <li>Reunião de entrega pra explicar cada passo</li>
+        </ul>
+      </div>
+      <div class="deliv-pages" aria-hidden="true">
+        <div class="pg pg2"><div class="band"></div><div class="inner"><div class="l" style="width:70%"></div><div class="l"></div><div class="l" style="width:85%"></div><div class="l" style="width:55%"></div><div class="l"></div></div></div>
+        <div class="pg pg1"><div class="band"></div><div class="inner"><div class="l" style="width:80%"></div><div class="l"></div><div class="l" style="width:60%"></div><div class="l"></div><div class="l" style="width:75%"></div><div class="l" style="width:50%"></div></div></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px">
+      <a href="https://www.basedecampeao.com.br/pdi" class="btn">Quero o diagnóstico do meu filho</a>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS -->
+<section class="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Casos reais</span>
+      <h2>Cada atleta é um plano diferente</h2>
+    </div>
+    <div class="c-grid">
+      <div class="case"><div class="age">8 anos</div><div class="loc">Brasília / DF</div><p>Um menino apaixonado pela bola. O plano foi proteger a infância e construir a base técnica com leveza, mantendo o futebol como espaço de prazer, sem transformar em obrigação.</p></div>
+      <div class="case"><div class="age">14 anos</div><div class="loc">Escola de futebol</div><p>Físico e técnica acima da média, mas travado pelo medo de errar. O foco: destravar a intensidade competitiva e transformar apoio da família em estrutura.</p></div>
+      <div class="case"><div class="age">14 anos</div><div class="loc">Londres, Inglaterra</div><p>Retomada segura após lesão, com rotina física e mental estruturada. Prova de que o PDI funciona à distância, inclusive fora do Brasil.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRA QUEM É -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow dark">Antes de decidir</span>
+      <h2>O PDI é pra você?</h2>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-col yes">
+        <h3>É pra famílias que…</h3>
+        <ul>
+          <li>Querem participar ativamente da formação do filho</li>
+          <li>Buscam tomar decisões com mais segurança</li>
+          <li>Entendem que desenvolvimento é um processo contínuo</li>
+          <li>Querem que o atleta evolua de forma organizada</li>
+          <li>Valorizam o filho como pessoa antes do atleta</li>
+        </ul>
+      </div>
+      <div class="fit-col no">
+        <h3>Não é pra quem…</h3>
+        <ul>
+          <li>Procura atalho ou fórmula mágica</li>
+          <li>Espera garantia de contrato ou peneira</li>
+          <li>Quer resultado imediato sem processo</li>
+          <li>Não pretende se envolver na jornada</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="offer" id="investimento">
+  <div class="wrap">
+    <span class="eyebrow">O investimento</span>
+    <div class="sec-head center" style="margin-bottom:34px"><h2>Comece pelo diagnóstico</h2></div>
+    <div class="price-wrap">
+      <div class="price-card">
+        <span class="ptag main">Etapa 1</span>
+        <div class="plabel">Diagnóstico PDI</div>
+        <div class="pval"><span class="cur">R$</span>397</div>
+        <div class="pnote">Reunião de diagnóstico, análise nos 7 pilares, relatório personalizado e reunião de entrega do plano.</div>
+      </div>
+      <div class="price-card">
+        <span class="ptag main">Etapa 2</span>
+        <div class="plabel">Acompanhamento BDC</div>
+        <div class="pval"><span class="cur">R$</span>197<span class="per">/mês</span></div>
+        <ul class="pfeat">
+          <li>Reunião mensal de evolução do atleta</li>
+          <li>Análise de desempenho individual dos jogos</li>
+          <li>Ajustes contínuos do plano</li>
+          <li>Suporte estratégico nas decisões da temporada</li>
+        </ul>
+      </div>
+    </div>
+    <p class="stage-note">Depois que o plano fica pronto, começa a fase mais importante: a execução.</p>
+    <div class="offer-cta">
+      <div class="cta-row" style="justify-content:center">
+        <a href="https://www.basedecampeao.com.br/pdi" class="btn">Quero começar o diagnóstico</a>
+        <a href="https://wa.me/5551998800521?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." class="btn-ghost">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+          Tenho dúvidas, quero falar com um especialista
+        </a>
+      </div>
+      <span class="btn-sub light" style="text-align:center">Você preenche um formulário rápido e a nossa equipe entra em contato pra dar o próximo passo.</span>
+    </div>
+    <p class="anchor">O custo de errar de clube, sobrecarregar o menino ou perder uma janela de desenvolvimento é muito maior do que o de ter clareza desde agora.</p>
+    <p class="guarantee">Vagas limitadas por mês, porque cada diagnóstico é feito com atenção individual.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="narrow">
+    <div class="sec-head center">
+      <span class="eyebrow dark">Perguntas frequentes</span>
+      <h2>Ainda com dúvida?</h2>
+    </div>
+    <div class="faq">
+      <details><summary>A partir de que idade funciona?</summary><p>O PDI atende atletas a partir dos 8 anos. O plano é sempre ajustado à fase: pra criança pequena, o foco é proteger a relação com o jogo; pra adolescente, entra estrutura, intensidade e planejamento de carreira.</p></details>
+      <details><summary>Meu filho não está em clube. Serve pra ele?</summary><p>Sim. O diagnóstico avalia o momento atual seja qual for o ambiente: projeto social, escolinha ou clube. E ajuda inclusive a decidir os próximos passos.</p></details>
+      <details><summary>Vocês atendem à distância?</summary><p>Atendemos. Todo o processo pode ser feito online, incluindo famílias fora do Brasil. As reuniões acontecem por vídeo e o grupo fica ativo no WhatsApp.</p></details>
+      <details><summary>O que acontece depois do diagnóstico?</summary><p>Com o plano em mãos, o atleta entra na Etapa 2: o Acompanhamento BDC. Todo mês a equipe avalia a evolução, faz a análise de desempenho individual dos jogos e ajusta as prioridades do plano. É o que garante que o plano saia do papel. O investimento é de R$ 197 por mês, sem fidelidade.</p></details>
+      <details><summary>Quanto tempo até receber o plano?</summary><p>O mês de diagnóstico é dedicado a entender o atleta por completo. A entrega do relatório acontece ao final desse primeiro ciclo, em reunião com a família.</p></details>
+      <details><summary>Os pais participam?</summary><p>Sim, e isso é essencial. A família é um dos 7 pilares de análise e recebe orientações específicas. O PDI foi feito pra caminhar junto com vocês.</p></details>
+      <details><summary>Isso substitui o treino do clube?</summary><p>Não substitui. O PDI organiza e complementa a formação, dando direção estratégica pra que cada decisão esteja alinhada ao momento do atleta.</p></details>
+      <details><summary>Como funciona pra começar?</summary><p>Você preenche um formulário rápido com os dados do atleta. Nossa equipe entra em contato, confirma sua vaga do mês e cria o grupo oficial pra iniciar o diagnóstico.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <span class="eyebrow" style="display:block;margin-bottom:20px">Base de Campeão</span>
+    <h2>A formação do seu filho está acontecendo <span class="gold">agora</span>.</h2>
+    <p>Com ou sem plano, o tempo passa igual. A diferença está em conduzir esse caminho com clareza, consciência e direção.</p>
+    <div class="cta-row">
+      <a href="https://www.basedecampeao.com.br/pdi" class="btn">Quero o diagnóstico do meu filho</a>
+      <a href="https://wa.me/5551998800521?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." class="btn-ghost">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        Falar com um especialista
+      </a>
+    </div>
+    <div class="scarcity">Abrimos apenas um número limitado de diagnósticos por mês</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="logo-bdc.png" alt="Base de Campeão" class="footer-logo">
+    <div>Preparar a família. Formar o atleta. Conectar com a oportunidade.</div>
+    <div style="margin-top:10px">Base de Campeão Ensino de Esportes LTDA · <a href="https://www.basedecampeao.com.br/pdi">Começar agora</a></div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5551998800521?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." aria-label="Falar com um especialista no WhatsApp" title="Falar com um especialista">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+</a>
+
+</body>
+</html>
