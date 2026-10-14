@@ -1,532 +1,1271 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PDI | Plano de Desenvolvimento Individual | Base de Campeão</title>
-<link rel="icon" type="image/png" href="favicon-bdc.png">
-<link rel="apple-touch-icon" href="favicon-bdc.png">
-<meta name="description" content="Diagnóstico completo e plano personalizado para o desenvolvimento do seu filho no futebol. Análise em 7 pilares e uma equipe caminhando junto com a família.">
-
-<!-- Open Graph (WhatsApp, Instagram, Facebook, LinkedIn) -->
+<title>PDI — Plano de Desenvolvimento Individual | Base de Campeão</title>
+<meta name="description" content="Gestão de carreira, análise de desempenho individual e plano de treino para um atleta só. Para atletas da base ao profissional e para as famílias que caminham com eles.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://pdi.basedecampeao.com.br/">
+<meta name="theme-color" content="#031B2E">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.basedecampeao.com.br/pdi">
-<meta property="og:title" content="PDI | Plano de Desenvolvimento Individual">
-<meta property="og:description" content="Diagnóstico completo e plano personalizado para o desenvolvimento do seu filho no futebol. Clareza pra família tomar as melhores decisões.">
-<meta property="og:image" content="https://www.basedecampeao.com.br/pdi/og-pdi.png">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Base de Campeão">
+<meta property="og:title" content="PDI — Plano de Desenvolvimento Individual | Base de Campeão">
+<meta property="og:description" content="O talento já está aí. Falta o plano. Gestão de carreira, análise de desempenho e plano de treino feitos para um atleta só.">
+<meta property="og:url" content="https://pdi.basedecampeao.com.br/">
+<meta property="og:image" content="https://pdi.basedecampeao.com.br/og-pdi.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:site_name" content="Base de Campeão">
-<meta property="og:locale" content="pt_BR">
-<!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PDI | Plano de Desenvolvimento Individual">
-<meta name="twitter:description" content="Diagnóstico completo e plano personalizado para o desenvolvimento do seu filho no futebol.">
-<meta name="twitter:image" content="https://www.basedecampeao.com.br/pdi/og-pdi.png">
+<meta name="twitter:title" content="PDI — Plano de Desenvolvimento Individual">
+<meta name="twitter:description" content="O talento já está aí. Falta o plano.">
+<meta name="twitter:image" content="https://pdi.basedecampeao.com.br/og-pdi.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@1.47.0/dist/umd/lucide.min.js" defer></script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "name": "PDI — Plano de Desenvolvimento Individual",
+ "serviceType": "Gestão de carreira, análise de desempenho individual e plano de treino para atletas de futebol",
+ "provider": { "@type": "Organization", "name": "Base de Campeão", "url": "https://novobdc.basedecampeao.com.br/" },
+ "areaServed": "BR",
+ "url": "https://pdi.basedecampeao.com.br/"
+}
+</script>
 <style>
-  :root{
-    --navy-950:#0B1D33;
-    --navy-900:#0E2340;
-    --navy-800:#14304F;
-    --navy-700:#1D3E63;
-    --gold:#C9A24B;
-    --gold-bright:#DBB863;
-    --cream:#F7F5F0;
-    --paper:#FBFAF7;
-    --ink:#182234;
-    --muted:#5A6577;
-    --line:#E4DFD4;
-    --wa:#25D366;
+
+
+  :root {
+    --navy-main: #031B2E;
+    --navy-surface: #06243A;
+    --navy-card: rgba(8, 36, 58, 0.7);
+    --gold: #DBA741;
+    --gold-light: #F3C363;
+    --gold-glow: rgba(219, 167, 69, 0.25);
+    --cyan-accent: #00F2FE;
+    --text-main: #F4F7FA;
+    --text-muted: #94A8B8;
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --border-gold: rgba(219, 167, 65, 0.3);
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
   }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--paper);
-    line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; scroll-padding-top: 80px; }
+  body {
+    font-family: 'DM Sans', -apple-system, sans-serif;
+    background-color: var(--navy-main);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
-  h1,h2,h3,.display{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em;text-transform:uppercase;line-height:.98}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  .narrow{max-width:760px;margin:0 auto;padding:0 24px}
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+  i[data-lucide] { width: 18px; height: 18px; display: inline-block; }
 
-  .slash-top{height:14px;background:var(--navy-900);position:relative}
-  .slash-top::before{content:"";position:absolute;left:0;top:0;height:100%;width:38%;background:var(--gold);clip-path:polygon(0 0,100% 0,86% 100%,0 100%)}
+  #hero-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: 1; pointer-events: none; }
 
-  .eyebrow{font-family:'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;font-weight:700;color:var(--gold);margin-bottom:16px;display:block}
-  .eyebrow.dark{color:var(--navy-800)}
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+  .wrap-narrow { max-width: 820px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
 
-  /* buttons */
-  .btn{display:inline-block;background:var(--gold);color:var(--navy-950);font-weight:700;font-size:1.02rem;padding:17px 34px;border-radius:4px;text-decoration:none;transition:transform .15s ease,background .15s ease;box-shadow:0 8px 24px rgba(201,162,75,.28);border:none;cursor:pointer}
-  .btn:hover{background:var(--gold-bright);transform:translateY(-2px)}
-  .btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
-  .btn-ghost{display:inline-flex;align-items:center;gap:9px;background:transparent;color:#fff;font-weight:700;font-size:1rem;padding:16px 28px;border-radius:4px;text-decoration:none;border:1.5px solid rgba(255,255,255,.35);transition:border-color .15s,background .15s}
-  .btn-ghost:hover{border-color:var(--gold);background:rgba(201,162,75,.1)}
-  .btn-ghost svg{width:20px;height:20px;fill:var(--gold)}
-  .btn-ghost.on-light{color:var(--navy-900);border-color:var(--navy-800)}
-  .btn-ghost.on-light:hover{border-color:var(--gold);background:rgba(201,162,75,.08)}
-  .cta-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:6px}
-  .btn-sub{display:block;margin-top:14px;font-size:.82rem;color:var(--muted);font-weight:400}
-  .btn-sub.light{color:rgba(255,255,255,.62)}
+  .glass-card {
+    background: var(--navy-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .glass-card.hoverable:hover {
+    border-color: rgba(219, 167, 65, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px var(--gold-glow);
+    transform: translateY(-3px);
+  }
+
+  /* BUTTONS */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 14px 28px; border-radius: 999px;
+    font-size: 0.95rem; font-weight: 700; text-decoration: none;
+    cursor: pointer; border: none; transition: all 0.25s ease;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .btn-gold { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); box-shadow: 0 8px 25px rgba(219, 167, 65, 0.3); }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(219, 167, 65, 0.45); filter: brightness(1.05); }
+  .btn-outline { background: rgba(255, 255, 255, 0.04); color: var(--text-main); border: 1px solid var(--border-glass); }
+  .btn-outline:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.25); transform: translateY(-2px); }
+
+  /* BADGES */
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 14px; border-radius: 999px;
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .badge-gold { background: rgba(219, 167, 65, 0.12); border: 1px solid var(--border-gold); color: var(--gold-light); }
+  .badge-cyan { background: rgba(0, 242, 254, 0.1); border: 1px solid rgba(0, 242, 254, 0.3); color: var(--cyan-accent); }
+  .badge-muted { background: rgba(255,255,255,0.05); border: 1px solid var(--border-glass); color: var(--text-muted); }
+
+  /* HEADER */
+  header.site-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; padding: 14px 0; transition: all 0.3s ease; }
+  header.site-header.scrolled { padding: 8px 0; background: rgba(3, 27, 46, 0.88); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-glass); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .brand-logo { display: flex; align-items: center; text-decoration: none; }
+  .brand-logo img { height: 48px; width: auto; }
+  .nav-menu { display: flex; align-items: center; gap: 28px; list-style: none; }
+  .nav-menu a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: color 0.2s; }
+  .nav-menu a:hover { color: #FFF; }
 
   /* HERO */
-  header.hero{background:var(--navy-900);color:#fff;position:relative;padding:70px 0 80px;overflow:hidden}
-  header.hero::after{content:"";position:absolute;right:-140px;top:-140px;width:420px;height:420px;background:radial-gradient(circle,rgba(201,162,75,.16),transparent 65%);pointer-events:none}
-  .brand-logo{height:112px;width:auto;display:block;margin-bottom:24px}
-  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
-  header.hero h1{font-size:clamp(2.7rem,6.4vw,4.6rem);color:#fff}
-  header.hero h1 .gold{color:var(--gold)}
-  .hero-sub{font-size:1.14rem;color:rgba(255,255,255,.82);margin:26px 0 30px;max-width:30em}
-  .hero-meta{margin-top:30px;display:flex;gap:26px;flex-wrap:wrap;font-size:.82rem;color:rgba(255,255,255,.6);letter-spacing:.02em}
-  .hero-meta b{color:#fff;font-weight:700}
-
-  .report-mock{background:var(--paper);border-radius:8px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.4);transform:rotate(2deg)}
-  .report-mock .rm-band{height:56px;background:var(--navy-900);position:relative}
-  .report-mock .rm-band::before{content:"";position:absolute;left:0;top:0;height:100%;width:44%;background:var(--gold);clip-path:polygon(0 0,100% 0,80% 100%,0 100%)}
-  .report-mock .rm-body{padding:22px}
-  .rm-title{font-family:'Anton',sans-serif;text-transform:uppercase;color:var(--navy-900);font-size:1.05rem;line-height:1;margin-bottom:14px}
-  .rm-line{height:8px;background:var(--line);border-radius:4px;margin:9px 0}
-  .rm-line.s{width:60%}.rm-line.m{width:82%}
-  .rm-chip{display:inline-block;font-family:'Anton',sans-serif;font-size:.7rem;color:var(--gold);background:var(--navy-900);padding:5px 10px;border-radius:3px;margin:14px 6px 0 0;letter-spacing:.04em}
-
-  section{padding:76px 0}
-  .sec-head{max-width:640px;margin-bottom:44px}
-  .sec-head h2{font-size:clamp(1.9rem,4.4vw,2.9rem);color:var(--navy-900)}
-  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
-  .sec-head p{color:var(--muted);font-size:1.06rem;margin-top:16px}
-
-  .dor{background:var(--cream)}
-  .q-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
-  .q-card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);padding:22px 24px;border-radius:4px;font-size:1.06rem;font-weight:500;color:var(--navy-800)}
-  .dor-close{margin-top:34px;font-size:1.15rem;font-weight:500;color:var(--navy-900);text-align:center}
-
-  .isnt{background:var(--navy-900);color:#fff}
-  .isnt .sec-head h2{color:#fff}
-  .isnt-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:10px}
-  .isnt-col{background:var(--navy-800);border-radius:6px;padding:30px}
-  .isnt-col h3{font-size:1.15rem;color:var(--gold);margin-bottom:18px;letter-spacing:.06em}
-  .isnt-col.neg h3{color:#fff;opacity:.55}
-  .isnt-col ul{list-style:none}
-  .isnt-col li{padding:9px 0 9px 30px;position:relative;color:rgba(255,255,255,.9)}
-  .isnt-col li::before{position:absolute;left:0;top:8px;font-family:'Anton';font-size:.9rem}
-  .isnt-col.pos li::before{content:"✓";color:var(--gold)}
-  .isnt-col.neg li{color:rgba(255,255,255,.55)}
-  .isnt-col.neg li::before{content:"✕";color:rgba(255,255,255,.4)}
-
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:10px}
-  .step{position:relative}
-  .step .num{font-family:'Anton';font-size:2.6rem;color:var(--gold);line-height:1}
-  .step h3{font-size:1.1rem;color:var(--navy-900);margin:12px 0 8px}
-  .step p{color:var(--muted);font-size:.95rem}
-  .step:not(:last-child)::after{content:"";position:absolute;top:18px;right:-13px;width:26px;height:2px;background:var(--line)}
-
-  .pillars{background:var(--cream)}
-  .p-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-  .pillar{background:var(--navy-900);color:#fff;border-radius:6px;padding:26px 22px;position:relative;overflow:hidden;min-height:150px;transition:transform .18s ease}
-  .pillar:hover{transform:translateY(-4px)}
-  .pillar::before{content:"";position:absolute;left:0;bottom:0;width:100%;height:5px;background:var(--gold)}
-  .pillar .pn{font-family:'Anton';font-size:.8rem;color:var(--gold);letter-spacing:.1em}
-  .pillar h3{font-size:1.32rem;margin:14px 0 8px;color:#fff}
-  .pillar p{font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.45}
-  .p-grid .pillar.wide{grid-column:span 2;background:var(--navy-800)}
-
-  .deliv-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-  .deliv-list{list-style:none}
-  .deliv-list li{padding:15px 0 15px 40px;position:relative;border-bottom:1px solid var(--line);font-size:1.06rem;font-weight:500;color:var(--navy-800)}
-  .deliv-list li::before{content:"";position:absolute;left:0;top:19px;width:22px;height:22px;background:var(--gold);border-radius:3px;clip-path:polygon(50% 0,100% 22%,100% 68%,50% 100%,0 68%,0 22%)}
-  .deliv-pages{position:relative;height:340px}
-  .deliv-pages .pg{position:absolute;width:74%;background:#fff;border:1px solid var(--line);border-radius:6px;box-shadow:0 18px 40px rgba(20,30,50,.14);overflow:hidden}
-  .deliv-pages .pg .band{height:34px;background:var(--navy-900);position:relative}
-  .deliv-pages .pg .band::before{content:"";position:absolute;left:0;top:0;height:100%;width:44%;background:var(--gold);clip-path:polygon(0 0,100% 0,78% 100%,0 100%)}
-  .deliv-pages .pg .inner{padding:16px}
-  .deliv-pages .pg .l{height:6px;background:var(--line);border-radius:3px;margin:7px 0}
-  .deliv-pages .pg1{top:0;left:0;z-index:2}
-  .deliv-pages .pg2{top:40px;left:26%;z-index:1;transform:rotate(4deg)}
-
-  .cases{background:var(--navy-950);color:#fff}
-  .cases .sec-head h2{color:#fff}
-  .c-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .case{background:var(--navy-800);border-radius:8px;padding:30px;border-top:4px solid var(--gold)}
-  .case .age{font-family:'Anton';font-size:2.2rem;color:var(--gold);line-height:1}
-  .case .loc{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.5);margin:6px 0 16px}
-  .case p{color:rgba(255,255,255,.85);font-size:.98rem}
-
-  .fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-  .fit-col{border-radius:6px;padding:32px}
-  .fit-col.yes{background:var(--cream);border:1px solid var(--line)}
-  .fit-col.no{background:#fff;border:1px solid var(--line)}
-  .fit-col h3{font-size:1.15rem;margin-bottom:18px}
-  .fit-col.yes h3{color:var(--navy-900)}
-  .fit-col.no h3{color:var(--muted)}
-  .fit-col ul{list-style:none}
-  .fit-col li{padding:8px 0 8px 28px;position:relative;color:var(--navy-800)}
-  .fit-col.yes li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
-  .fit-col.no li{color:var(--muted)}
-  .fit-col.no li::before{content:"✕";position:absolute;left:0;color:var(--muted);font-size:.8rem;top:11px}
-
-  /* offer */
-  .offer{background:var(--navy-900);color:#fff;text-align:center}
-  .offer .eyebrow{color:var(--gold)}
-  .price-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;max-width:820px;margin:0 auto;text-align:left}
-  .price-card{background:var(--navy-800);border:1px solid var(--navy-700);border-radius:12px;padding:38px 34px;position:relative;overflow:hidden}
-  .price-card::before{content:"";position:absolute;left:0;top:0;width:100%;height:6px;background:var(--gold)}
-  .price-card .ptag{display:inline-block;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:5px 11px;border-radius:20px;margin-bottom:18px}
-  .price-card .ptag.main{background:var(--gold);color:var(--navy-950)}
-  .price-card .plabel{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.6)}
-  .price-card .pval{font-family:'Anton';font-size:3.6rem;color:#fff;line-height:1;margin:8px 0}
-  .price-card .pval span.cur{color:var(--gold);font-size:1.6rem;vertical-align:top}
-  .price-card .pval span.per{font-family:'DM Sans';font-size:1rem;color:rgba(255,255,255,.6);font-weight:500;letter-spacing:0;text-transform:none}
-  .price-card .pnote{color:rgba(255,255,255,.72);font-size:.94rem}
-  .offer .sec-head h2{color:#fff}
-  .price-card .pfeat{list-style:none;margin-top:6px}
-  .price-card .pfeat li{padding:7px 0 7px 26px;position:relative;color:rgba(255,255,255,.86);font-size:.93rem;line-height:1.4}
-  .price-card .pfeat li::before{content:"✓";position:absolute;left:0;top:7px;color:var(--gold);font-weight:700}
-  .stage-note{max-width:640px;margin:28px auto 0;color:rgba(255,255,255,.82);font-size:1.04rem;text-align:center}
-  .offer-cta{margin-top:38px}
-  .anchor{max-width:600px;margin:30px auto 0;color:rgba(255,255,255,.72);font-size:1.02rem}
-  .guarantee{margin-top:20px;font-size:.86rem;color:rgba(255,255,255,.55)}
-
-  .faq details{border-bottom:1px solid var(--line);padding:6px 0}
-  .faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;font-weight:700;font-size:1.08rem;color:var(--navy-900)}
-  .faq summary::-webkit-details-marker{display:none}
-  .faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-family:'Anton';font-size:1.5rem;color:var(--gold);transition:transform .2s}
-  .faq details[open] summary::after{content:"–"}
-  .faq details p{color:var(--muted);padding:0 40px 22px 0;font-size:1rem}
-
-  .final{background:var(--navy-950);color:#fff;text-align:center;padding:88px 0}
-  .final h2{font-size:clamp(2.1rem,5vw,3.4rem);color:#fff;max-width:14em;margin:0 auto 14px}
-  .final h2 .gold{color:var(--gold)}
-  .final p{color:rgba(255,255,255,.72);font-size:1.1rem;max-width:32em;margin:0 auto 34px}
-  .final .cta-row{justify-content:center}
-  .scarcity{margin-top:26px;font-size:.86rem;letter-spacing:.06em;color:var(--gold);text-transform:uppercase;font-weight:700}
-
-  footer{background:#08182B;color:rgba(255,255,255,.5);padding:40px 0;font-size:.82rem;text-align:center}
-  footer .footer-logo{height:70px;width:auto;display:block;margin:0 auto 16px;opacity:.95}
-  footer a{color:var(--gold);text-decoration:none}
-
-  .wa-float{position:fixed;right:20px;bottom:20px;z-index:50;background:var(--gold);color:var(--navy-950);width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(201,162,75,.4);text-decoration:none;transition:transform .15s,background .15s}
-  .wa-float:hover{transform:scale(1.08);background:var(--gold-bright)}
-  .wa-float svg{width:30px;height:30px;fill:var(--navy-950)}
-
-  @media(max-width:860px){
-    .hero-grid{grid-template-columns:1fr;gap:40px}
-    .report-mock{max-width:360px;margin:0 auto;transform:rotate(1.5deg)}
-    .q-list{grid-template-columns:1fr}
-    .isnt-grid{grid-template-columns:1fr}
-    .steps{grid-template-columns:1fr 1fr}
-    .step:not(:last-child)::after{display:none}
-    .p-grid{grid-template-columns:1fr 1fr}
-    .deliv-grid{grid-template-columns:1fr;gap:40px}
-    .deliv-pages{height:300px;max-width:360px;margin:0 auto}
-    .c-grid{grid-template-columns:1fr}
-    .fit-grid{grid-template-columns:1fr}
-    .price-wrap{grid-template-columns:1fr;max-width:460px}
+  .hero-section {
+    position: relative; padding: 150px 0 90px; min-height: 100vh; display: flex; align-items: center;
+    background: radial-gradient(circle at 10% 20%, rgba(22, 112, 163, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(219, 167, 65, 0.1) 0%, transparent 50%);
   }
-  @media(max-width:480px){
-    section{padding:56px 0}
-    .steps{grid-template-columns:1fr}
-    .p-grid{grid-template-columns:1fr}
-    .p-grid .pillar.wide{grid-column:span 1}
-    .price-card{padding:30px 24px}
-    .cta-row{flex-direction:column;align-items:stretch}
-    .cta-row .btn,.cta-row .btn-ghost{text-align:center;justify-content:center}
+  .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+  .hero-title { font-size: clamp(2.8rem, 5.5vw, 4.8rem); line-height: 0.95; margin: 20px 0 24px; font-weight: 800; }
+  .hero-title .highlight { background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-subtitle { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 36px; max-width: 540px; }
+  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 30px; font-size: 0.85rem; color: var(--text-muted); }
+  .hero-trust span { display: inline-flex; align-items: center; gap: 7px; }
+  .hero-trust i { color: var(--gold); }
+
+  /* SIMULATOR */
+  .interactive-sim-card { padding: 28px; background: rgba(6, 36, 58, 0.85); border: 1px solid var(--border-gold); box-shadow: 0 30px 60px rgba(0,0,0,0.4); position: relative; overflow: hidden; }
+  .sim-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--border-glass); }
+  .sim-title { font-size: 1.15rem; font-weight: 700; color: #FFF; display: flex; align-items: center; gap: 8px; }
+  .form-group { margin-bottom: 16px; }
+  .form-label { display: block; font-size: 0.78rem; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .form-select { width: 100%; padding: 12px 16px; background: rgba(3, 27, 46, 0.7); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); color: #FFF; font-family: inherit; font-size: 0.92rem; outline: none; transition: border-color 0.2s; }
+  .form-select:focus { border-color: var(--gold); }
+  .form-select option { background: #06243A; }
+  .sim-result { margin-top: 20px; padding: 18px; border-radius: var(--radius-sm); background: rgba(219, 167, 65, 0.08); border: 1px dashed var(--gold); display: none; }
+  .sim-result.active { display: block; animation: fadeIn 0.4s ease; }
+  .sim-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+  .sim-row .lbl { font-size: 0.72rem; font-weight: 800; color: var(--gold-light); text-transform: uppercase; }
+  .sim-text { font-size: 0.92rem; color: #FFF; font-weight: 600; margin-bottom: 8px; }
+  .sim-extra { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 14px; }
+  .sim-reco { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid var(--border-glass); }
+  .sim-reco .name { font-size: 0.9rem; color: var(--cyan-accent); font-weight: 700; }
+  .sim-reco a { font-size: 0.85rem; font-weight: 700; color: var(--gold-light); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* STATS */
+  .stats-banner { padding: 40px 0; border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); background: rgba(3, 27, 46, 0.5); position: relative; z-index: 2; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+  .stat-number { font-family: 'Barlow Condensed', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--gold-light); line-height: 1; }
+  .stat-label { font-size: 0.85rem; color: var(--text-muted); font-weight: 600; margin-top: 6px; }
+
+  /* SECTION HEAD */
+  .section-head { text-align: center; max-width: 700px; margin: 0 auto 56px; }
+  .section-title { font-size: clamp(2.2rem, 3.8vw, 3.4rem); line-height: 1.05; margin-top: 12px; }
+  .section-sub { color: var(--text-muted); margin-top: 12px; }
+
+  /* DORES */
+  .realities-section { padding: 120px 0; position: relative; z-index: 2; }
+  .bento-dores { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .bent-card { padding: 28px; display: flex; flex-direction: column; justify-content: space-between; min-height: 220px; cursor: pointer; }
+  .icon-wrap { width: 44px; height: 44px; border-radius: 12px; background: rgba(219, 167, 65, 0.1); color: var(--gold); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+  .bent-card h3 { font-size: 1.35rem; color: #FFF; margin-bottom: 10px; line-height: 1.15; }
+  .bent-card p { font-size: 0.9rem; color: var(--text-muted); }
+  .expand-btn { margin-top: 16px; font-size: 0.8rem; font-weight: 700; color: var(--gold); display: flex; align-items: center; gap: 6px; }
+
+  /* MÉTODO */
+  .method-section { padding: 120px 0; background: linear-gradient(180deg, var(--navy-main) 0%, var(--navy-surface) 50%, var(--navy-main) 100%); position: relative; z-index: 2; }
+  .method-stepper { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin-bottom: 40px; }
+  .step-node { background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); padding: 16px; text-align: center; cursor: pointer; transition: all 0.25s; font-family: inherit; color: inherit; }
+  .step-node.active { background: rgba(219, 167, 65, 0.15); border-color: var(--gold); transform: translateY(-4px); }
+  .step-node .num { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--gold); }
+  .step-node .title { font-size: 0.85rem; font-weight: 700; color: #FFF; margin-top: 4px; }
+  .method-display { padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch; }
+  .method-display h3 { font-size: 2.2rem; color: var(--gold-light); margin: 12px 0 14px; }
+  .method-display p { font-size: 1.02rem; color: var(--text-muted); line-height: 1.7; }
+  .method-side { display: flex; flex-direction: column; gap: 14px; }
+  .method-box { background: rgba(3,27,46,0.6); padding: 22px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); }
+  .method-box h4 { color: #FFF; margin-bottom: 10px; font-size: 1.05rem; display: flex; align-items: center; gap: 8px; }
+  .method-box h4 i { color: var(--gold); }
+  .method-box p { font-size: 0.95rem; }
+  .method-box.sinal { border-color: var(--border-gold); background: rgba(219,167,65,0.06); }
+  .step-node.zero { border-style: dashed; }
+  .step-node.zero .num { color: var(--text-muted); }
+  .step-node.zero.active .num { color: var(--gold); }
+
+  /* MANUAL (isca) */
+  .manual-section { padding: 30px 0 100px; position: relative; z-index: 2; }
+  .manual-card { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; padding: 44px; background: linear-gradient(135deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.85) 60%); border: 1px solid var(--border-gold); border-radius: var(--radius-lg); }
+  .manual-card h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); line-height: 1.05; margin: 14px 0 14px; }
+  .manual-card p { color: var(--text-muted); font-size: 1.02rem; margin-bottom: 24px; max-width: 560px; }
+  .manual-cover { aspect-ratio: 3/4; max-width: 260px; margin: 0 auto; width: 100%; border-radius: 14px; background: linear-gradient(160deg, #0A3350 0%, #031B2E 100%); border: 1px solid var(--border-gold); box-shadow: 0 30px 60px rgba(0,0,0,0.45); padding: 26px 22px; display: flex; flex-direction: column; justify-content: space-between; transform: rotate(-3deg); }
+  .manual-cover .mc-top { font-size: 0.7rem; font-weight: 800; color: var(--gold-light); letter-spacing: 1px; text-transform: uppercase; }
+  .manual-cover .mc-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.9rem; font-weight: 800; text-transform: uppercase; line-height: 1; color: #FFF; }
+  .manual-cover .mc-title span { color: var(--gold); }
+  .manual-cover .mc-foot { font-size: 0.72rem; color: var(--text-muted); }
+
+  /* PRODUTOS */
+  .products-section { padding: 50px 0 110px; position: relative; z-index: 2; }
+  .filter-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 48px; flex-wrap: wrap; }
+  .tab-btn { padding: 10px 22px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-glass); color: var(--text-muted); font-weight: 600; font-size: 0.9rem; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+  .tab-btn.active { background: var(--gold); color: var(--navy-main); border-color: var(--gold); }
+  .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .product-card { padding: 32px; display: flex; flex-direction: column; justify-content: space-between; }
+  .product-card.featured { grid-column: span 2; background: linear-gradient(135deg, rgba(8, 36, 58, 0.92) 0%, rgba(22, 112, 163, 0.2) 100%); border-color: var(--border-gold); }
+  .product-card.wide { grid-column: span 3; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: center; }
+  .card-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .product-card h3 { font-size: 1.8rem; color: #FFF; margin: 14px 0 10px; line-height: 1.05; }
+  .product-card .desc { color: var(--text-muted); font-size: 0.93rem; }
+  .format-tag { font-size: 0.82rem; color: var(--gold-light); font-weight: 700; }
+  .who { font-size: 0.8rem; color: var(--text-muted); margin-top: 10px; }
+  .who b { color: #FFF; font-weight: 600; }
+  .feature-list { list-style: none; margin: 20px 0; }
+  .feature-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px; }
+  .feature-list li i { color: var(--gold); flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px; }
+  .card-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+  .posicoes { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .pos { font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
+  .pos.on { background: rgba(0,242,254,0.1); color: var(--cyan-accent); border: 1px solid rgba(0,242,254,0.3); }
+  .pos.off { background: rgba(255,255,255,0.04); color: var(--text-muted); border: 1px solid var(--border-glass); }
+
+  /* HUB */
+  .hub-card { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding: 44px; }
+  .hub-card h2 { font-size: clamp(2rem, 3.4vw, 2.8rem); line-height: 1.05; margin: 14px 0; }
+  .hub-card p { color: var(--text-muted); margin-bottom: 24px; }
+  .hub-clubs { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .hub-clubs a { display: block; padding: 12px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: rgba(255,255,255,0.03); color: var(--text-main); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: all 0.2s; }
+  .hub-clubs a:hover { border-color: var(--border-gold); color: var(--gold-light); }
+  .hub-clubs li:last-child { grid-column: span 2; }
+  .hub-clubs li:last-child a { text-align: center; color: var(--gold-light); border-color: var(--border-gold); }
+  @media (max-width: 1024px) { .hub-card { grid-template-columns: 1fr; padding: 28px; } }
+
+  /* COMPARATIVO */
+  .compare-section { padding: 20px 0 110px; position: relative; z-index: 2; }
+  .compare-wrap { overflow-x: auto; }
+  .compare-table { width: 100%; min-width: 640px; border-collapse: separate; border-spacing: 0; background: var(--navy-card); border: 1px solid var(--border-glass); border-radius: var(--radius-md); overflow: hidden; }
+  .compare-table th, .compare-table td { padding: 16px 18px; text-align: center; border-bottom: 1px solid var(--border-glass); font-size: 0.92rem; }
+  .compare-table th { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: 1.1rem; color: #FFF; letter-spacing: 0.5px; background: rgba(3,27,46,0.6); }
+  .compare-table th.hl { color: var(--navy-main); background: var(--gold); }
+  .compare-table td:first-child, .compare-table th:first-child { text-align: left; color: var(--text-muted); }
+  .compare-table td.hl { background: rgba(219,167,65,0.07); }
+  .compare-table tr:last-child td { border-bottom: none; }
+  .yes { color: var(--gold); font-weight: 800; }
+  .no { color: rgba(255,255,255,0.22); }
+  .compare-note { text-align: center; color: var(--text-muted); font-size: 0.9rem; margin-top: 18px; }
+
+  /* ESCOLINHAS */
+  .b2b-section { padding: 110px 0; position: relative; z-index: 2; }
+  .b2b-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .b2b-grid h2 { font-size: clamp(2.1rem, 3.6vw, 3.1rem); line-height: 1.05; margin: 14px 0 16px; }
+  .b2b-grid > div > p { color: var(--text-muted); font-size: 1.02rem; margin-bottom: 26px; }
+  .b2b-points { display: grid; gap: 14px; }
+  .b2b-point { padding: 22px; display: flex; gap: 16px; align-items: flex-start; }
+  .b2b-point h4 { font-size: 1.15rem; color: #FFF; margin-bottom: 4px; }
+  .b2b-point p { font-size: 0.9rem; color: var(--text-muted); }
+  .b2b-point .icon-wrap { flex-shrink: 0; }
+
+  /* DEPOIMENTO */
+  .dep-section { padding: 90px 0; position: relative; z-index: 2; }
+  .dep-card { padding: 48px; text-align: center; }
+  .dep-card blockquote { font-size: 1.25rem; line-height: 1.6; color: #FFF; font-weight: 500; margin: 20px 0 28px; }
+  .dep-who { display: flex; align-items: center; justify-content: center; gap: 14px; }
+  .dep-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--gold); color: var(--navy-main); display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; }
+  .dep-who .t { text-align: left; }
+  .dep-who b { display: block; color: #FFF; }
+  .dep-who span { font-size: 0.85rem; color: var(--text-muted); }
+
+  /* MANIFESTO */
+  .manifesto-section { padding: 130px 0; text-align: center; position: relative; z-index: 2; background: radial-gradient(circle at 50% 50%, rgba(219,167,65,0.08) 0%, transparent 55%); }
+  .manifesto-quote { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: clamp(1.9rem, 3.6vw, 2.9rem); font-weight: 700; color: #FFF; line-height: 1.2; margin: 20px 0 30px; }
+  .manifesto-section p { color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; }
+  .manifesto-final { margin-top: 26px; color: var(--gold-light) !important; font-weight: 700; }
+
+  /* FOOTER */
+  footer.site-footer { padding: 80px 0 40px; background: #021324; border-top: 1px solid var(--border-glass); color: var(--text-muted); position: relative; z-index: 2; }
+  .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 56px; }
+  .footer-grid h4 { color: #FFF; font-size: 1.1rem; margin-bottom: 18px; }
+  .footer-brand img { height: 60px; width: auto; margin-bottom: 18px; }
+  .footer-links { list-style: none; }
+  .footer-links li { margin-bottom: 12px; }
+  .footer-links a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 8px; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-bottom { border-top: 1px solid var(--border-glass); padding-top: 24px; text-align: center; font-size: 0.85rem; }
+
+  /* MODAL */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(2, 19, 36, 0.85); backdrop-filter: blur(12px); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+  .modal-overlay.active { opacity: 1; pointer-events: auto; }
+  .modal-content { background: var(--navy-surface); border: 1px solid var(--border-gold); border-radius: var(--radius-md); max-width: 620px; width: 100%; padding: 36px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.5); max-height: 90vh; overflow-y: auto; }
+  .modal-close { position: absolute; top: 18px; right: 20px; background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 1.6rem; }
+  .modal-content h3 { font-size: 1.8rem; color: #FFF; margin: 16px 0; line-height: 1.1; }
+  .modal-content p { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: 1fr 1fr; }
+    .product-card.featured { grid-column: span 2; }
+    .product-card.wide { grid-column: span 2; grid-template-columns: 1fr; }
+    .bento-dores { grid-template-columns: 1fr 1fr; }
+    .method-stepper { grid-template-columns: repeat(4, 1fr); }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .b2b-grid, .manual-card { grid-template-columns: 1fr; }
+    .nav-menu { display: none; }
   }
-  @media(prefers-reduced-motion:reduce){
-    *{transition:none!important;scroll-behavior:auto!important}
-    .report-mock{transform:none}
+  @media (max-width: 640px) {
+    .hero-section { padding-top: 120px; }
+    .realities-section, .method-section, .b2b-section { padding: 70px 0; }
+    .manifesto-section { padding: 80px 0; }
+    .section-head { margin-bottom: 36px; }
+    .products-grid { grid-template-columns: 1fr; }
+    .product-card.featured, .product-card.wide { grid-column: span 1; }
+    .bento-dores { grid-template-columns: 1fr; }
+    .method-stepper { grid-template-columns: repeat(2, 1fr); }
+    .step-node.zero { grid-column: span 2; }
+    .method-display { grid-template-columns: 1fr; padding: 24px; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .manual-card, .dep-card { padding: 26px; }
+    .brand-logo img { height: 40px; }
+    .nav-actions .btn { padding: 10px 16px; font-size: 0.85rem; }
+    .nav-actions .btn span.long { display: none; }
+  }
+
+  /* BDC SCOUT SPOTLIGHT */
+  .scout-section { padding: 110px 0; position: relative; z-index: 2; background: radial-gradient(circle at 85% 30%, rgba(0,242,254,0.07) 0%, transparent 45%), radial-gradient(circle at 10% 80%, rgba(219,167,65,0.08) 0%, transparent 45%); }
+  .scout-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+  .scout-kicker { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+  .scout-grid h2 { font-size: clamp(2.4rem, 4.6vw, 4rem); line-height: 0.98; margin-bottom: 20px; }
+  .scout-grid h2 .hl { background: linear-gradient(135deg, var(--cyan-accent) 0%, #7AF7FF 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .scout-lead { color: var(--text-muted); font-size: 1.08rem; margin-bottom: 28px; max-width: 540px; }
+  .scout-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 30px; }
+  .scout-feat { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border-radius: var(--radius-sm); background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); }
+  .scout-feat i { color: var(--cyan-accent); flex-shrink: 0; margin-top: 2px; }
+  .scout-feat b { display: block; color: #FFF; font-size: 0.95rem; margin-bottom: 2px; }
+  .scout-feat span { font-size: 0.84rem; color: var(--text-muted); line-height: 1.45; }
+  .scout-note { font-size: 0.85rem; color: var(--text-muted); margin-top: 16px; }
+  .scout-note b { color: var(--gold-light); }
+
+  .profile-mock { position: relative; padding: 26px; background: linear-gradient(160deg, rgba(10,51,80,0.95) 0%, rgba(3,27,46,0.95) 100%); border: 1px solid rgba(0,242,254,0.25); border-radius: var(--radius-lg); box-shadow: 0 40px 80px rgba(0,0,0,0.45), 0 0 60px rgba(0,242,254,0.06); }
+  .pm-tag { position: absolute; top: -12px; right: 22px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; background: var(--navy-surface); color: var(--text-muted); border: 1px solid var(--border-glass); padding: 4px 10px; border-radius: 999px; }
+  .pm-head { display: flex; gap: 16px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--border-glass); }
+  .pm-avatar { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.6rem; flex-shrink: 0; }
+  .pm-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 800; text-transform: uppercase; color: #FFF; line-height: 1.05; }
+  .pm-sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 3px; }
+  .pm-verify { margin-left: auto; color: var(--cyan-accent); }
+  .pm-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 18px 0; }
+  .pm-stat { text-align: center; padding: 12px 6px; border-radius: 10px; background: rgba(255,255,255,0.04); }
+  .pm-stat b { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; color: var(--gold-light); line-height: 1; }
+  .pm-stat span { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+  .pm-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid var(--border-glass); font-size: 0.88rem; color: var(--text-main); }
+  .pm-row i { color: var(--gold); flex-shrink: 0; }
+  .pm-row .pm-right { margin-left: auto; font-size: 0.8rem; color: var(--text-muted); }
+  .pm-opp { margin-top: 10px; padding: 14px 16px; border-radius: 12px; background: rgba(0,242,254,0.08); border: 1px dashed rgba(0,242,254,0.4); display: flex; gap: 12px; align-items: center; }
+  .pm-opp i { color: var(--cyan-accent); flex-shrink: 0; }
+  .pm-opp b { display: block; color: #FFF; font-size: 0.9rem; }
+  .pm-opp span { font-size: 0.8rem; color: var(--text-muted); }
+  @media (max-width: 1024px) { .scout-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .scout-section { padding: 70px 0; }
+    .scout-feats { grid-template-columns: 1fr; }
+    .pm-stats { grid-template-columns: repeat(2, 1fr); }
+    .profile-mock { padding: 20px; }
+  }
+  .compare-table.two { min-width: 520px; }
+
+
+  /* ================= SCOUT LP ================= */
+  .hl-cyan { background: linear-gradient(135deg, var(--cyan-accent) 0%, #7AF7FF 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .sc-hero { position: relative; padding: 140px 0 90px; min-height: 92vh; display: flex; align-items: center;
+    background: radial-gradient(circle at 85% 25%, rgba(0,242,254,0.10) 0%, transparent 42%), radial-gradient(circle at 10% 85%, rgba(219,167,65,0.10) 0%, transparent 45%); }
+  .sc-hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+  .sc-kicker { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+  .sc-title { font-size: clamp(2.6rem, 5.2vw, 4.5rem); line-height: 0.96; font-weight: 800; margin-bottom: 22px; }
+  .sc-lead { font-size: 1.12rem; color: var(--text-muted); max-width: 540px; margin-bottom: 30px; }
+  .sc-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
+  .sc-price-hint { font-size: 0.92rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px; }
+  .sc-price-hint b { color: var(--gold-light); }
+  .sc-price-hint i { color: var(--gold); }
+
+  /* profile mock */
+  .profile-mock { position: relative; padding: 26px; background: linear-gradient(160deg, rgba(10,51,80,0.95) 0%, rgba(3,27,46,0.95) 100%); border: 1px solid rgba(0,242,254,0.25); border-radius: var(--radius-lg); box-shadow: 0 40px 80px rgba(0,0,0,0.45), 0 0 60px rgba(0,242,254,0.06); }
+  .pm-tag { position: absolute; top: -12px; right: 22px; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; background: var(--navy-surface); color: var(--text-muted); border: 1px solid var(--border-glass); padding: 4px 10px; border-radius: 999px; }
+  .pm-head { display: flex; gap: 16px; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--border-glass); }
+  .pm-avatar { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.6rem; flex-shrink: 0; }
+  .pm-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; font-weight: 800; text-transform: uppercase; color: #FFF; line-height: 1.05; }
+  .pm-sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 3px; }
+  .pm-verify { margin-left: auto; color: var(--cyan-accent); }
+  .pm-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 18px 0; }
+  .pm-stat { text-align: center; padding: 12px 6px; border-radius: 10px; background: rgba(255,255,255,0.04); }
+  .pm-stat b { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; color: var(--gold-light); line-height: 1; }
+  .pm-stat span { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+  .pm-row { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid var(--border-glass); font-size: 0.88rem; color: var(--text-main); }
+  .pm-row i { color: var(--gold); flex-shrink: 0; }
+  .pm-row .pm-right { margin-left: auto; font-size: 0.8rem; color: var(--text-muted); }
+  .pm-opp { margin-top: 10px; padding: 14px 16px; border-radius: 12px; background: rgba(0,242,254,0.08); border: 1px dashed rgba(0,242,254,0.4); display: flex; gap: 12px; align-items: center; }
+  .pm-opp i { color: var(--cyan-accent); flex-shrink: 0; }
+  .pm-opp b { display: block; color: #FFF; font-size: 0.9rem; }
+  .pm-opp span { font-size: 0.8rem; color: var(--text-muted); }
+
+  /* generic section */
+  .sc-section { padding: 110px 0; position: relative; z-index: 2; }
+  .sc-section.alt { background: var(--navy-surface); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); }
+
+  /* problema */
+  .pain-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .pain { padding: 26px 22px; }
+  .pain .icon-wrap { background: rgba(255,90,90,0.08); color: #FF8A8A; }
+  .pain h3 { font-size: 1.2rem; color: #FFF; margin-bottom: 8px; line-height: 1.15; }
+  .pain p { font-size: 0.9rem; color: var(--text-muted); }
+  .pain-turn { margin-top: 40px; text-align: center; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: clamp(1.5rem, 2.6vw, 2.1rem); font-weight: 700; color: #FFF; }
+  .pain-turn span { color: var(--cyan-accent); }
+
+  /* vídeo */
+  .video-wrap { max-width: 980px; margin: 0 auto; }
+  .video-frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-lg); overflow: hidden; background: linear-gradient(135deg, #0A3350 0%, #031B2E 100%); border: 1px solid rgba(0,242,254,0.25); box-shadow: 0 40px 80px rgba(0,0,0,0.45); cursor: pointer; }
+  .video-frame iframe, .video-frame video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .video-poster { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; text-align: center; padding: 24px;
+    background: radial-gradient(circle at 50% 45%, rgba(0,242,254,0.12) 0%, transparent 55%); }
+  .video-poster img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.55; }
+  .play-btn { position: relative; width: 92px; height: 92px; border-radius: 50%; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 12px rgba(219,167,65,0.15), 0 20px 40px rgba(0,0,0,0.4); transition: transform 0.2s; }
+  .video-frame:hover .play-btn { transform: scale(1.06); }
+  .play-btn i, .play-btn svg { width: 36px; height: 36px; margin-left: 4px; }
+  .video-poster .vp-title { position: relative; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-weight: 800; font-size: clamp(1.3rem, 2.6vw, 2rem); color: #FFF; }
+  .video-poster .vp-sub { position: relative; font-size: 0.9rem; color: var(--text-muted); }
+  .video-points { display: flex; justify-content: center; gap: 26px; flex-wrap: wrap; margin-top: 26px; font-size: 0.9rem; color: var(--text-muted); }
+  .video-points span { display: inline-flex; align-items: center; gap: 8px; }
+  .video-points i { color: var(--cyan-accent); }
+
+  /* recursos (feature rows) */
+  .feat-row { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 50px 0; border-bottom: 1px solid var(--border-glass); }
+  .feat-row:last-child { border-bottom: none; }
+  .feat-row.rev .feat-copy { order: 2; }
+  .feat-num { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 800; color: var(--cyan-accent); letter-spacing: 1px; margin-bottom: 10px; }
+  .feat-copy h3 { font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.02; color: #FFF; margin-bottom: 14px; }
+  .feat-copy p { color: var(--text-muted); font-size: 1rem; margin-bottom: 18px; max-width: 480px; }
+  .feat-bullets { list-style: none; display: grid; gap: 10px; }
+  .feat-bullets li { display: flex; gap: 10px; font-size: 0.93rem; color: var(--text-main); }
+  .feat-bullets li i { color: var(--gold); flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px; }
+  .screen { border-radius: var(--radius-md); background: linear-gradient(160deg, rgba(10,51,80,0.9) 0%, rgba(3,27,46,0.95) 100%); border: 1px solid var(--border-glass); box-shadow: 0 30px 60px rgba(0,0,0,0.35); overflow: hidden; }
+  .screen-bar { display: flex; align-items: center; gap: 6px; padding: 12px 16px; border-bottom: 1px solid var(--border-glass); background: rgba(3,27,46,0.6); }
+  .screen-bar span { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,0.14); }
+  .screen-bar em { margin-left: 10px; font-style: normal; font-size: 0.75rem; color: var(--text-muted); font-weight: 600; }
+  .screen-body { padding: 20px; }
+  .screen img.print { display: block; width: 100%; height: auto; }
+  .cv-line { display: grid; grid-template-columns: 90px 1fr; gap: 12px; padding: 11px 0; border-bottom: 1px dashed var(--border-glass); font-size: 0.86rem; }
+  .cv-line:last-child { border-bottom: none; }
+  .cv-line b { color: var(--gold-light); font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; }
+  .cv-line span { color: var(--text-main); }
+  .cv-line small { display: block; color: var(--text-muted); font-size: 0.78rem; }
+  .game-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+  .game-table th { text-align: left; font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.4px; padding: 0 8px 10px; font-weight: 700; }
+  .game-table td { padding: 10px 8px; border-top: 1px solid var(--border-glass); color: var(--text-main); }
+  .game-table td.num { text-align: center; color: var(--gold-light); font-weight: 700; }
+  .game-table th.num { text-align: center; }
+  .game-total { margin-top: 14px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .game-total div { text-align: center; padding: 10px; border-radius: 10px; background: rgba(0,242,254,0.07); }
+  .game-total b { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; color: var(--cyan-accent); }
+  .game-total span { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+  .thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .thumb { position: relative; aspect-ratio: 16/10; border-radius: 12px; background: linear-gradient(135deg, #0E4466 0%, #06243A 100%); border: 1px solid var(--border-glass); display: flex; align-items: flex-end; padding: 10px; overflow: hidden; }
+  .thumb::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 40%, rgba(255,255,255,0.06), transparent 60%); }
+  .thumb .tp { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-60%); width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center; color: #FFF; }
+  .thumb .tl { position: relative; font-size: 0.75rem; color: #FFF; font-weight: 600; }
+  .ig-line { margin-top: 12px; display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 12px; background: rgba(255,255,255,0.04); font-size: 0.85rem; }
+  .ig-line i { color: var(--gold); }
+  .ig-line em { margin-left: auto; font-style: normal; color: var(--cyan-accent); font-weight: 700; font-size: 0.78rem; }
+  .opp-item { display: flex; gap: 14px; align-items: flex-start; padding: 14px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); margin-bottom: 10px; }
+  .opp-item:last-child { margin-bottom: 0; }
+  .opp-ico { width: 38px; height: 38px; border-radius: 10px; background: rgba(0,242,254,0.1); color: var(--cyan-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .opp-item b { display: block; color: #FFF; font-size: 0.92rem; }
+  .opp-item span { font-size: 0.8rem; color: var(--text-muted); }
+  .opp-item .tag-new { margin-left: auto; font-size: 0.68rem; font-weight: 800; color: var(--navy-main); background: var(--cyan-accent); padding: 3px 8px; border-radius: 999px; text-transform: uppercase; flex-shrink: 0; }
+  .mini-feats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 30px; }
+  .mini-feat { padding: 24px; display: flex; gap: 14px; align-items: flex-start; }
+  .mini-feat h4 { font-size: 1.1rem; color: #FFF; margin-bottom: 4px; }
+  .mini-feat p { font-size: 0.87rem; color: var(--text-muted); }
+  .mini-feat .icon-wrap { margin: 0; flex-shrink: 0; }
+
+  /* oportunidades */
+  .opp-types { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .opp-type { padding: 26px 22px; }
+  .opp-type .icon-wrap { background: rgba(0,242,254,0.1); color: var(--cyan-accent); }
+  .opp-type h3 { font-size: 1.2rem; color: #FFF; margin-bottom: 8px; }
+  .opp-type p { font-size: 0.88rem; color: var(--text-muted); }
+  .limit-box { margin-top: 30px; padding: 20px 24px; border-radius: var(--radius-sm); border: 1px solid var(--border-gold); background: rgba(219,167,65,0.06); display: flex; gap: 14px; align-items: flex-start; font-size: 0.93rem; color: var(--text-muted); }
+  .limit-box i { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+  .limit-box b { color: #FFF; }
+
+  /* para quem */
+  .who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .who-card { padding: 36px; }
+  .who-card h3 { font-size: 1.7rem; color: #FFF; margin: 14px 0 12px; line-height: 1.05; }
+  .who-card p { color: var(--text-muted); margin-bottom: 16px; }
+  .who-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 30px; }
+  .who-tags span { font-size: 0.85rem; font-weight: 600; padding: 8px 16px; border-radius: 999px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-glass); color: var(--text-main); }
+
+  /* passos */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .step { padding: 30px; position: relative; }
+  .step .n { font-family: 'Barlow Condensed', sans-serif; font-size: 3.2rem; font-weight: 800; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px var(--gold); margin-bottom: 14px; }
+  .step h3 { font-size: 1.35rem; color: #FFF; margin-bottom: 8px; }
+  .step p { font-size: 0.92rem; color: var(--text-muted); }
+
+  /* planos */
+  .plans { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 880px; margin: 0 auto; align-items: stretch; }
+  .plan { padding: 36px; display: flex; flex-direction: column; position: relative; }
+  .plan.best { border: 1.5px solid var(--gold); background: linear-gradient(160deg, rgba(219,167,65,0.12) 0%, rgba(8,36,58,0.9) 55%); box-shadow: 0 30px 60px rgba(0,0,0,0.35), 0 0 40px var(--gold-glow); }
+  .plan-flag { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 6px 16px; border-radius: 999px; white-space: nowrap; }
+  .plan h3 { font-size: 1.5rem; color: #FFF; }
+  .plan .plan-desc { font-size: 0.9rem; color: var(--text-muted); margin: 6px 0 22px; }
+  .plan .price { display: flex; align-items: baseline; gap: 6px; }
+  .plan .price .cur { font-size: 1.1rem; font-weight: 700; color: var(--text-muted); }
+  .plan .price .val { font-family: 'Barlow Condensed', sans-serif; font-size: 3.6rem; font-weight: 800; color: #FFF; line-height: 1; }
+  .plan .price .per { font-size: 0.95rem; color: var(--text-muted); }
+  .plan .equiv { font-size: 0.9rem; color: var(--gold-light); font-weight: 700; margin-top: 8px; min-height: 1.4em; }
+  .plan .save { display: inline-block; margin-top: 8px; font-size: 0.78rem; font-weight: 800; color: var(--navy-main); background: var(--cyan-accent); padding: 4px 10px; border-radius: 999px; }
+  .plan ul { list-style: none; margin: 24px 0 28px; display: grid; gap: 10px; flex-grow: 1; }
+  .plan li { display: flex; gap: 10px; font-size: 0.92rem; color: var(--text-main); }
+  .plan li i { color: var(--gold); flex-shrink: 0; margin-top: 3px; width: 16px; height: 16px; }
+  .plan .btn { width: 100%; }
+  .plans-note { text-align: center; font-size: 0.88rem; color: var(--text-muted); margin-top: 26px; }
+  .plans-note a { color: var(--gold-light); font-weight: 700; text-decoration: none; }
+
+  /* upsell comunidade */
+  .upsell { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 30px; align-items: center; padding: 36px 40px; border-radius: var(--radius-lg); border: 1px solid var(--border-gold); background: linear-gradient(135deg, rgba(219,167,65,0.1) 0%, rgba(8,36,58,0.85) 60%); }
+  .upsell h3 { font-size: clamp(1.6rem, 2.8vw, 2.2rem); color: #FFF; margin: 12px 0 10px; line-height: 1.05; }
+  .upsell p { color: var(--text-muted); }
+  .upsell ul { list-style: none; display: grid; gap: 8px; font-size: 0.9rem; color: var(--text-main); }
+  .upsell li { display: flex; gap: 8px; }
+  .upsell li i { color: var(--gold); width: 16px; height: 16px; margin-top: 3px; flex-shrink: 0; }
+
+  /* faq */
+  .faq { max-width: 820px; margin: 0 auto; }
+  .faq details { border: 1px solid var(--border-glass); border-radius: var(--radius-sm); background: var(--navy-card); margin-bottom: 12px; overflow: hidden; }
+  .faq summary { list-style: none; cursor: pointer; padding: 20px 22px; font-weight: 700; color: #FFF; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 1rem; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-size: 1.4rem; color: var(--gold); flex-shrink: 0; transition: transform 0.2s; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq details p { padding: 0 22px 20px; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+
+  /* cta final */
+  .final-cta { padding: 120px 0; text-align: center; position: relative; z-index: 2; background: radial-gradient(circle at 50% 50%, rgba(0,242,254,0.08) 0%, transparent 55%); }
+  .final-cta h2 { font-size: clamp(2.2rem, 4.4vw, 3.6rem); line-height: 1; margin: 16px 0 18px; }
+  .final-cta p { color: var(--text-muted); font-size: 1.08rem; margin-bottom: 30px; }
+
+  /* barra fixa mobile */
+  .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 150; padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px)); background: rgba(3,27,46,0.95); backdrop-filter: blur(14px); border-top: 1px solid var(--border-glass); display: none; align-items: center; justify-content: space-between; gap: 12px; transform: translateY(110%); transition: transform 0.3s ease; }
+  .sticky-cta.show { transform: translateY(0); }
+  .sticky-cta .sp { font-size: 0.8rem; color: var(--text-muted); line-height: 1.3; }
+  .sticky-cta .sp b { display: block; color: #FFF; font-size: 0.95rem; }
+  .sticky-cta .btn { padding: 12px 18px; font-size: 0.88rem; }
+
+  @media (max-width: 1024px) {
+    .sc-hero-grid, .feat-row, .upsell { grid-template-columns: 1fr; }
+    .feat-row.rev .feat-copy { order: 0; }
+    .pain-grid, .opp-types { grid-template-columns: 1fr 1fr; }
+    .mini-feats { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .sticky-cta { display: flex; }
+    .plans, .who-grid, .steps { grid-template-columns: 1fr; }
+    .plan.best { order: -1; }
+  }
+  @media (max-width: 640px) {
+    .sc-hero { padding-top: 115px; min-height: auto; }
+    .sc-section, .final-cta { padding: 70px 0; }
+    .pain-grid, .opp-types { grid-template-columns: 1fr; }
+    .pm-stats { grid-template-columns: repeat(2, 1fr); }
+    .profile-mock { padding: 20px; }
+    .feat-row { padding: 36px 0; gap: 26px; }
+    .plan, .who-card { padding: 28px; }
+    .upsell { padding: 26px; }
+    .game-table th:nth-child(2), .game-table td:nth-child(2) { display: none; }
+    footer.site-footer { padding-bottom: 110px; }
+  }
+  /* ÁREA DO ALUNO */
+  .nav-actions { display: flex; align-items: center; gap: 10px; }
+  .aluno-link { display: inline-flex; align-items: center; gap: 7px; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.04); color: var(--text-main); font-size: 0.88rem; font-weight: 700; text-decoration: none; white-space: nowrap; transition: all 0.2s; }
+  .aluno-link:hover { border-color: var(--border-gold); color: #FFF; background: rgba(255,255,255,0.08); }
+  .aluno-link i, .aluno-link svg { width: 16px; height: 16px; }
+  @media (max-width: 640px) { .aluno-link span { display: none; } .aluno-link { padding: 10px 12px; } }
+
+
+  /* ================= PDI ================= */
+  .hl-gold { background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .pdi-hero { background: radial-gradient(circle at 85% 25%, rgba(219,167,65,0.13) 0%, transparent 45%), radial-gradient(circle at 10% 85%, rgba(0,242,254,0.06) 0%, transparent 45%); }
+  .who-pick { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+  .who-pick .lbl { width: 100%; font-size: 0.85rem; color: var(--text-muted); font-weight: 600; }
+
+  /* documento PDI */
+  .doc { position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,0.45), 0 0 50px var(--gold-glow); border: 1px solid var(--border-gold); }
+  .doc-top { height: 64px; background: linear-gradient(110deg, var(--gold) 0%, var(--gold) 34%, #0A3350 34.2%, #0A3350 100%); position: relative; }
+  .doc-top span { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 0.72rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--gold-light); }
+  .doc-body { background: #F7F5F0; padding: 26px 26px 22px; color: #10161F; }
+  .doc-body h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.7rem; text-transform: uppercase; color: #03273E; line-height: 1; margin-bottom: 16px; }
+  .doc-who { display: flex; gap: 12px; align-items: center; padding: 12px; border-radius: 12px; background: #fff; border: 1px solid #E6E2D6; margin-bottom: 14px; }
+  .doc-who .av { width: 42px; height: 42px; border-radius: 10px; background: #03273E; color: #F3C363; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 1.1rem; }
+  .doc-who b { display: block; font-size: 0.92rem; color: #03273E; }
+  .doc-who span { font-size: 0.78rem; color: #5C6B7A; }
+  .doc-three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
+  .doc-three div { background: #03273E; color: #fff; border-radius: 10px; padding: 10px 8px; text-align: center; font-size: 0.72rem; font-weight: 700; line-height: 1.25; }
+  .doc-three i, .doc-three svg { display: block; margin: 0 auto 5px; color: #F3C363; width: 18px; height: 18px; }
+  .doc-pillars { display: flex; flex-wrap: wrap; gap: 6px; }
+  .doc-pillars span { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 0.82rem; color: #DBA741; background: #03273E; padding: 4px 9px; border-radius: 6px; }
+  .doc-foot { height: 6px; background: var(--gold); }
+
+  /* três entregas */
+  .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .three-card { padding: 32px 28px; }
+  .three-card .icon-wrap { width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); }
+  .three-card h3 { font-size: 1.6rem; color: #FFF; margin-bottom: 10px; line-height: 1.05; }
+  .three-card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 14px; }
+  .three-card ul { list-style: none; display: grid; gap: 8px; }
+  .three-card li { display: flex; gap: 9px; font-size: 0.9rem; color: var(--text-main); }
+  .three-card li i, .three-card li svg { color: var(--gold); width: 16px; height: 16px; margin-top: 3px; flex-shrink: 0; }
+  .three-note { text-align: center; margin-top: 26px; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-size: clamp(1.3rem, 2.4vw, 1.8rem); font-weight: 700; color: #FFF; }
+  .three-note span { color: var(--gold); }
+
+  /* abas família x atleta */
+  .tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 34px; flex-wrap: wrap; }
+  .tab { display: inline-flex; align-items: center; gap: 10px; padding: 14px 26px; border-radius: 999px; font-family: inherit; font-size: 1rem; font-weight: 700; cursor: pointer; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.04); color: var(--text-muted); transition: all 0.2s; }
+  .tab i, .tab svg { width: 18px; height: 18px; }
+  .tab.active { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); border-color: transparent; box-shadow: 0 8px 24px rgba(219,167,65,0.3); }
+  .tab-panel { display: none; animation: fadeIn 0.35s ease; }
+  .tab-panel.active { display: block; }
+  .tp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
+  .tp-card { padding: 34px; }
+  .tp-card h3 { font-size: clamp(1.6rem, 2.6vw, 2.1rem); color: #FFF; margin: 12px 0 12px; line-height: 1.05; }
+  .tp-card > p { color: var(--text-muted); margin-bottom: 18px; }
+  .q-list { list-style: none; display: grid; gap: 10px; }
+  .q-list li { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); font-size: 0.93rem; color: var(--text-main); }
+  .q-list li::before { content: "?"; flex-shrink: 0; width: 22px; height: 22px; border-radius: 6px; background: rgba(219,167,65,0.15); color: var(--gold-light); font-weight: 800; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; }
+  .gain-list { list-style: none; display: grid; gap: 12px; }
+  .gain-list li { display: flex; gap: 12px; font-size: 0.95rem; color: var(--text-main); }
+  .gain-list li i, .gain-list li svg { color: var(--gold); width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; }
+  .tp-card.gold { border-color: var(--border-gold); background: linear-gradient(160deg, rgba(219,167,65,0.1) 0%, rgba(8,36,58,0.9) 55%); }
+  .tp-note { margin-top: 18px; font-size: 0.85rem; color: var(--gold-light); }
+
+  /* é / não é */
+  .isnot { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .isnot-col { padding: 32px; }
+  .isnot-col h3 { font-size: 1.4rem; color: #FFF; margin: 10px 0 16px; }
+  .isnot-col ul { list-style: none; display: grid; gap: 10px; }
+  .isnot-col li { display: flex; gap: 10px; font-size: 0.93rem; color: var(--text-main); }
+  .isnot-col li i, .isnot-col li svg { width: 17px; height: 17px; flex-shrink: 0; margin-top: 3px; }
+  .isnot-col.yes li i, .isnot-col.yes li svg { color: var(--gold); }
+  .isnot-col.no li i, .isnot-col.no li svg { color: #FF8A8A; }
+  .isnot-col.no li { color: var(--text-muted); }
+  .isnot-col.yes { border-color: var(--border-gold); }
+
+  /* etapas */
+  .flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .flow-step { padding: 26px 22px; }
+  .flow-step .n { font-family: 'Barlow Condensed', sans-serif; font-size: 2.6rem; font-weight: 800; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px var(--gold); margin-bottom: 12px; }
+  .flow-step h3 { font-size: 1.25rem; color: #FFF; margin-bottom: 8px; }
+  .flow-step p { font-size: 0.9rem; color: var(--text-muted); }
+  .flow-next { margin-top: 18px; padding: 28px; display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; border-color: var(--border-gold); background: linear-gradient(135deg, rgba(219,167,65,0.1) 0%, rgba(8,36,58,0.9) 60%); }
+  .flow-next .icon-wrap { width: 58px; height: 58px; margin: 0; border-radius: 14px; background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); color: var(--navy-main); }
+  .flow-next h3 { font-size: 1.4rem; color: #FFF; margin-bottom: 6px; }
+  .flow-next p { color: var(--text-muted); font-size: 0.93rem; }
+
+  /* pilares */
+  .pillars7 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .p7 { padding: 24px 22px; }
+  .p7 .n { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 800; color: var(--gold); letter-spacing: 0.6px; }
+  .p7 h3 { font-size: 1.3rem; color: #FFF; margin: 4px 0 8px; }
+  .p7 p { font-size: 0.88rem; color: var(--text-muted); }
+  .p7.wide { grid-column: span 2; border-color: var(--border-gold); background: linear-gradient(135deg, rgba(219,167,65,0.1) 0%, rgba(8,36,58,0.9) 60%); }
+
+  /* casos */
+  .cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .case { padding: 28px 24px; }
+  .case .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .case p { color: var(--text-main); font-size: 0.95rem; line-height: 1.65; }
+  .dep-card { padding: 44px; text-align: center; max-width: 860px; margin: 40px auto 0; }
+  .dep-card blockquote { font-size: 1.22rem; line-height: 1.6; color: #FFF; font-weight: 500; margin: 18px 0 26px; }
+  .dep-who { display: flex; align-items: center; justify-content: center; gap: 14px; }
+  .dep-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--cyan-accent); color: var(--navy-main); display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Barlow Condensed', sans-serif; font-size: 1.1rem; }
+  .dep-who .t { text-align: left; }
+  .dep-who b { display: block; color: #FFF; }
+  .dep-who span { font-size: 0.85rem; color: var(--text-muted); }
+
+  /* formulário */
+  .form-wrap { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 40px; align-items: start; }
+  .form-side h2 { font-size: clamp(2.1rem, 3.8vw, 3.1rem); line-height: 1.02; margin: 14px 0 16px; }
+  .form-side p { color: var(--text-muted); margin-bottom: 18px; }
+  .form-side ul { list-style: none; display: grid; gap: 12px; margin-bottom: 22px; }
+  .form-side li { display: flex; gap: 12px; color: var(--text-main); font-size: 0.95rem; }
+  .form-side li i, .form-side li svg { color: var(--gold); width: 18px; height: 18px; flex-shrink: 0; margin-top: 2px; }
+  .form-card { padding: 34px; border-color: var(--border-gold); }
+  .f-row { margin-bottom: 18px; }
+  .f-row.two { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .f-label { display: block; font-size: 0.88rem; font-weight: 700; color: #FFF; margin-bottom: 8px; }
+  .f-label .req { color: var(--gold); }
+  .f-input, .f-select, .f-area { width: 100%; padding: 13px 15px; border-radius: 10px; border: 1px solid var(--border-glass); background: rgba(3,27,46,0.7); color: #FFF; font-family: inherit; font-size: 0.95rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
+  .f-input:focus, .f-select:focus, .f-area:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(219,167,65,0.15); }
+  .f-area { min-height: 92px; resize: vertical; }
+  .f-input::placeholder, .f-area::placeholder { color: rgba(148,168,184,0.6); }
+  .f-select option { background: #06243A; }
+  .seg { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .seg input { position: absolute; opacity: 0; pointer-events: none; }
+  .seg label { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 13px; border-radius: 10px; border: 1px solid var(--border-glass); background: rgba(255,255,255,0.03); color: var(--text-muted); font-weight: 700; font-size: 0.92rem; cursor: pointer; transition: all 0.2s; text-align: center; }
+  .seg input:checked + label { border-color: var(--gold); background: rgba(219,167,65,0.14); color: #FFF; }
+  .seg input:focus-visible + label { box-shadow: 0 0 0 3px rgba(219,167,65,0.3); }
+  .f-help { font-size: 0.8rem; color: var(--text-muted); margin-top: 6px; }
+  .f-submit { width: 100%; margin-top: 6px; }
+  .f-submit[disabled] { opacity: 0.6; cursor: wait; }
+  .f-note { text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 14px; }
+  .f-error { display: none; margin-top: 14px; padding: 14px 16px; border-radius: 10px; background: rgba(255,90,90,0.08); border: 1px solid rgba(255,138,138,0.4); color: #FFC9C9; font-size: 0.9rem; }
+  .f-error a { color: var(--gold-light); font-weight: 700; }
+  .hp { position: absolute; left: -9999px; }
+
+  @media (max-width: 1024px) {
+    .three, .cases { grid-template-columns: 1fr 1fr; }
+    .flow { grid-template-columns: 1fr 1fr; }
+    .pillars7 { grid-template-columns: 1fr 1fr; }
+    .form-wrap { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .three, .cases, .tp-grid, .isnot, .flow { grid-template-columns: 1fr; }
+    .pillars7 { grid-template-columns: 1fr; }
+    .p7.wide { grid-column: span 1; }
+    .flow-next { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .tp-card, .isnot-col, .form-card, .dep-card { padding: 24px; }
+    .f-row.two { grid-template-columns: 1fr; }
+    .doc-three div { font-size: 0.66rem; }
   }
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-<!-- HERO -->
-<header class="hero">
-  <div class="wrap">
-    <img src="logo-bdc.png" alt="Base de Campeão" class="brand-logo">
-    <div class="hero-grid">
-      <div>
-        <span class="eyebrow">Plano de Desenvolvimento Individual</span>
-        <h1>Seu filho tem o sonho.<br><span class="gold">Falta o plano.</span></h1>
-        <p class="hero-sub">O PDI é um processo completo de diagnóstico e desenvolvimento para atletas de futebol e suas famílias: análise profunda em 7 pilares, um plano personalizado e uma equipe caminhando junto na jornada.</p>
-        <div class="cta-row">
-          <a href="https://www.basedecampeao.com.br/pdi" class="btn">Quero o diagnóstico do meu filho</a>
-          <a href="https://wa.me/5551998800521?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." class="btn-ghost">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-            Tenho dúvidas, quero falar com um especialista
-          </a>
-        </div>
-        <div class="hero-meta">
-          <span><b>7</b> pilares de análise e uma equipe caminhando junto com a sua família</span>
-        </div>
-      </div>
-      <div class="report-mock" aria-hidden="true">
-        <div class="rm-band"></div>
-        <div class="rm-body">
-          <div class="rm-title">PDI - Plano de<br>Desenvolvimento<br>Individual</div>
-          <div class="rm-line m"></div>
-          <div class="rm-line"></div>
-          <div class="rm-line s"></div>
-          <div>
-            <span class="rm-chip">Contexto</span><span class="rm-chip">Técnico</span>
-            <span class="rm-chip">Tático</span><span class="rm-chip">Físico</span>
-            <span class="rm-chip">Mental</span><span class="rm-chip">Nutricional</span>
-            <span class="rm-chip">Familiar</span>
-          </div>
-        </div>
-      </div>
+<canvas id="hero-canvas"></canvas>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <div class="wrap nav-inner">
+    <a href="https://novobdc.basedecampeao.com.br/" class="brand-logo" aria-label="Base de Campeão">
+      <img src="/logo-128.webp" width="126" height="128" alt="Base de Campeão">
+    </a>
+    <ul class="nav-menu">
+      <li><a href="#entregas">O que o PDI entrega</a></li>
+      <li><a href="#para-quem">Família ou atleta</a></li>
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#formulario" class="btn btn-gold" data-gtm="nav-formulario"><i data-lucide="file-text"></i><span>Quero<span class="long"> meu PDI</span></span></a>
     </div>
   </div>
 </header>
-<div class="slash-top"></div>
 
-<!-- DOR -->
-<section class="dor">
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow dark">Se você já se perguntou isso</span>
-      <h2>As dúvidas que tiram o sono de quem acompanha a formação</h2>
+<!-- ================= HERO ================= -->
+<section class="sc-hero pdi-hero">
+  <div class="wrap sc-hero-grid">
+    <div>
+      <div class="sc-kicker"><span class="badge badge-gold"><i data-lucide="user-check"></i> PDI — Plano de Desenvolvimento Individual</span></div>
+      <h1 class="sc-title">O talento já está aí.<br><span class="hl-gold">Falta o plano.</span></h1>
+      <p class="sc-lead">Gestão de carreira, análise de desempenho individual e plano de treino, construídos para um atleta só.<br>Para atletas da base ao profissional, e para as famílias que caminham com eles.</p>
+      <div class="who-pick">
+        <span class="lbl">Quem está lendo?</span>
+        <a href="#para-quem" class="btn btn-gold" data-tab-go="familia" data-gtm="hero-familia"><i data-lucide="users"></i> Sou pai, mãe ou responsável</a>
+        <a href="#para-quem" class="btn btn-outline" data-tab-go="atleta" data-gtm="hero-atleta"><i data-lucide="user"></i> Sou atleta</a>
+      </div>
+      <div class="sc-price-hint"><i data-lucide="shield-check"></i> Atendimento 100% individual, online, para atletas no Brasil e fora dele</div>
     </div>
-    <div class="q-list">
-      <div class="q-card">Será que o clube atual é o certo pra ele agora?</div>
-      <div class="q-card">Ele está treinando demais? Ou de menos?</div>
-      <div class="q-card">A gente cobra resultado ou deixa fluir?</div>
-      <div class="q-card">Como saber se ele está evoluindo de verdade?</div>
-      <div class="q-card">Estamos perdendo alguma janela importante?</div>
-      <div class="q-card">Qual é o próximo passo? E quando dar?</div>
+
+    <div class="doc" aria-label="Exemplo ilustrativo de um PDI">
+      <div class="doc-top"><span>Exemplo ilustrativo</span></div>
+      <div class="doc-body">
+        <h3>PDI — Plano de Desenvolvimento Individual</h3>
+        <div class="doc-who"><div class="av">AT</div><div><b>Atleta · Lateral esquerdo</b><span>Sub-15 · plano da temporada</span></div></div>
+        <div class="doc-three">
+          <div><i data-lucide="briefcase"></i>Gestão de carreira</div>
+          <div><i data-lucide="bar-chart-3"></i>Análise de desempenho</div>
+          <div><i data-lucide="activity"></i>Plano de treino</div>
+        </div>
+        <div class="doc-pillars"><span>Contexto</span><span>Técnico</span><span>Tático</span><span>Físico</span><span>Mental</span><span>Nutricional</span><span>Familiar</span></div>
+      </div>
+      <div class="doc-foot"></div>
     </div>
-    <p class="dor-close">Se alguma dessas perguntas já passou pela sua cabeça, você está no lugar certo.</p>
   </div>
 </section>
 
-<!-- O QUE É / NÃO É -->
-<section class="isnt">
+<!-- ================= TRÊS ENTREGAS ================= -->
+<section class="sc-section alt" id="entregas">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">O que é o PDI</span>
-      <h2>Clareza pra decidir. Direção pra caminhar.</h2>
-      <p style="color:rgba(255,255,255,.78)">Mais do que apontar pontos fortes e de atenção, a gente acompanha a execução do plano pra garantir que ele saia do papel. O maior diferencial na formação não é só o talento. É a qualidade das decisões tomadas ao longo da jornada.</p>
+    <div class="section-head">
+      <span class="badge badge-gold">Um produto individual e completo</span>
+      <h2 class="section-title">Três frentes trabalhando juntas, para um atleta só</h2>
+      <p class="section-sub">O PDI não é um relatório que fica na gaveta.<br>Ele junta as três frentes que mais definem a evolução de um atleta e acompanha a execução.</p>
     </div>
-    <div class="isnt-grid">
-      <div class="isnt-col pos">
-        <h3>O que o PDI é</h3>
+    <div class="three">
+      <div class="three-card glass-card">
+        <div class="icon-wrap"><i data-lucide="briefcase"></i></div>
+        <h3>Gestão de carreira</h3>
+        <p>Decisões de carreira tomadas com contexto, em cada momento da trajetória.</p>
+        <ul><li><i data-lucide="check"></i> Planejamento da temporada e metas</li><li><i data-lucide="check"></i> Escolha de clube e próximos passos</li><li><i data-lucide="check"></i> Orientação sobre empresários, contratos e oportunidades</li></ul>
+      </div>
+      <div class="three-card glass-card">
+        <div class="icon-wrap"><i data-lucide="bar-chart-3"></i></div>
+        <h3>Análise de desempenho individual</h3>
+        <p>O jogo do atleta analisado de verdade, não pela impressão de quem estava na arquibancada.</p>
+        <ul><li><i data-lucide="check"></i> Análise individual dos jogos</li><li><i data-lucide="check"></i> Pontos fortes e pontos de atenção</li><li><i data-lucide="check"></i> Evolução acompanhada ao longo do tempo</li></ul>
+      </div>
+      <div class="three-card glass-card">
+        <div class="icon-wrap"><i data-lucide="activity"></i></div>
+        <h3>Plano de treino</h3>
+        <p>O que treinar, quando e com qual prioridade, de acordo com o momento do atleta.</p>
+        <ul><li><i data-lucide="check"></i> Prioridades de desenvolvimento</li><li><i data-lucide="check"></i> Complemento ao treino do clube, sem sobrecarga</li><li><i data-lucide="check"></i> Rotina, recuperação e organização</li></ul>
+      </div>
+    </div>
+    <p class="three-note">Não é mais um treino.<br><span>É direção para cada treino, cada jogo e cada decisão.</span></p>
+  </div>
+</section>
+
+<!-- ================= FAMÍLIA x ATLETA ================= -->
+<section class="sc-section" id="para-quem">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="badge badge-cyan">Para quem é o PDI</span>
+      <h2 class="section-title">O PDI é do atleta.<br>E fala com quem caminha com ele.</h2>
+      <p class="section-sub">Escolha a sua versão.</p>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab active" role="tab" data-tab="familia" aria-selected="true"><i data-lucide="users"></i> Versão Família</button>
+      <button class="tab" role="tab" data-tab="atleta" aria-selected="false"><i data-lucide="user"></i> Versão Atleta</button>
+    </div>
+
+    <div class="tab-panel active" id="tab-familia" role="tabpanel">
+      <div class="tp-grid">
+        <div class="tp-card glass-card">
+          <span class="badge badge-muted">Para pais, mães e responsáveis</span>
+          <h3>As dúvidas que tiram o sono de quem acompanha a formação</h3>
+          <ul class="q-list">
+            <li>Será que o clube atual é o certo pra ele agora?</li>
+            <li>Ele está treinando demais? Ou de menos?</li>
+            <li>Como saber se ele está evoluindo de verdade?</li>
+            <li>A gente cobra resultado ou deixa fluir?</li>
+            <li>Estamos perdendo alguma janela importante?</li>
+            <li>Qual é o próximo passo? E quando dar?</li>
+          </ul>
+        </div>
+        <div class="tp-card glass-card gold">
+          <span class="badge badge-gold">O que a família ganha com o PDI</span>
+          <h3>Clareza para decidir.<br>Direção para caminhar.</h3>
+          <ul class="gain-list">
+            <li><i data-lucide="check-circle-2"></i> Entender onde o seu filho realmente está, além do placar e da minutagem</li>
+            <li><i data-lucide="check-circle-2"></i> Um plano com prioridades claras para a temporada</li>
+            <li><i data-lucide="check-circle-2"></i> Orientações específicas para a família, o pilar que muda tudo</li>
+            <li><i data-lucide="check-circle-2"></i> Uma equipe acompanhando a execução, mês a mês</li>
+            <li><i data-lucide="check-circle-2"></i> Decisões de carreira tomadas com contexto, não no impulso</li>
+          </ul>
+          <p class="tp-note">Atletas menores de idade participam junto com a família, que faz a inscrição.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="tab-atleta" role="tabpanel">
+      <div class="tp-grid">
+        <div class="tp-card glass-card">
+          <span class="badge badge-muted">Para atletas da base ao profissional</span>
+          <h3>As perguntas que todo atleta faz e quase ninguém responde</h3>
+          <ul class="q-list">
+            <li>Estou evoluindo no ritmo que poderia?</li>
+            <li>O que eu preciso desenvolver para dar o próximo passo?</li>
+            <li>Como me destacar na minha posição?</li>
+            <li>Como treinar mais sem me sobrecarregar ou me lesionar?</li>
+            <li>Meu clube atual me ajuda a crescer?</li>
+            <li>Como conduzir minha carreira com empresário, contrato e oportunidades?</li>
+          </ul>
+        </div>
+        <div class="tp-card glass-card gold">
+          <span class="badge badge-gold">O que você ganha com o PDI</span>
+          <h3>Seu jogo analisado.<br>Sua carreira com plano.</h3>
+          <ul class="gain-list">
+            <li><i data-lucide="check-circle-2"></i> Análise individual dos seus jogos, com pontos fortes e pontos de atenção</li>
+            <li><i data-lucide="check-circle-2"></i> Um plano de treino com prioridades claras para o seu momento</li>
+            <li><i data-lucide="check-circle-2"></i> Gestão de carreira: temporada, clube, contrato e próximos passos</li>
+            <li><i data-lucide="check-circle-2"></i> Acompanhamento mensal para ajustar a rota</li>
+            <li><i data-lucide="check-circle-2"></i> Atendimento online, de onde você estiver, no Brasil ou fora</li>
+          </ul>
+          <p class="tp-note">Para atletas de base, em transição, de categorias inferiores e profissionais.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= É / NÃO É ================= -->
+<section class="sc-section alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="badge badge-gold">O que é o PDI</span>
+      <h2 class="section-title">Mais do que um diagnóstico.<br>Um plano que sai do papel.</h2>
+      <p class="section-sub">O maior diferencial na trajetória não é só o talento.<br>É a qualidade das decisões tomadas ao longo do caminho.</p>
+    </div>
+    <div class="isnot">
+      <div class="isnot-col yes glass-card">
+        <span class="badge badge-gold">O PDI é</span>
+        <h3>Individual, profundo e acompanhado</h3>
         <ul>
-          <li>Um diagnóstico profundo do momento atual do atleta</li>
-          <li>Um plano de desenvolvimento personalizado</li>
-          <li>Direção clara pra família tomar decisões melhores</li>
-          <li>Acompanhamento contínuo da evolução</li>
+          <li><i data-lucide="check"></i> Um diagnóstico profundo do momento atual do atleta</li>
+          <li><i data-lucide="check"></i> Gestão de carreira, análise de desempenho e plano de treino juntos</li>
+          <li><i data-lucide="check"></i> Um plano construído para um atleta só</li>
+          <li><i data-lucide="check"></i> Acompanhamento contínuo da execução</li>
         </ul>
       </div>
-      <div class="isnt-col neg">
-        <h3>O que o PDI não é</h3>
+      <div class="isnot-col no glass-card">
+        <span class="badge badge-muted">O PDI não é</span>
+        <h3>Atalho, promessa ou material genérico</h3>
         <ul>
-          <li>Não é escolinha nem substitui o treino do clube</li>
-          <li>Não é curso gravado ou material genérico</li>
-          <li>Não é promessa de contrato ou de peneira garantida</li>
-          <li>Não é atalho, é processo bem conduzido</li>
+          <li><i data-lucide="x-circle"></i> Não substitui o treino do clube</li>
+          <li><i data-lucide="x-circle"></i> Não é curso gravado nem conteúdo igual para todos</li>
+          <li><i data-lucide="x-circle"></i> Não é promessa de contrato ou de peneira garantida</li>
+          <li><i data-lucide="x-circle"></i> Não é atalho, é processo bem conduzido</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COMO FUNCIONA -->
-<section>
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="sc-section" id="como-funciona">
   <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow dark">Como funciona o diagnóstico</span>
-      <h2>Um mês pra entender o atleta por inteiro</h2>
+    <div class="section-head">
+      <span class="badge badge-cyan">Como funciona</span>
+      <h2 class="section-title">Um mês para entender o atleta por inteiro</h2>
     </div>
-    <div class="steps">
-      <div class="step"><div class="num">1</div><h3>Grupo oficial</h3><p>Criamos um grupo exclusivo no WhatsApp com família, atleta e equipe BDC. É o canal de comunicação durante todo o processo.</p></div>
-      <div class="step"><div class="num">2</div><h3>Reunião de diagnóstico</h3><p>Conversa individual com atleta e família pra entender histórico, objetivos, rotina, clube, desafios e dúvidas.</p></div>
-      <div class="step"><div class="num">3</div><h3>Análise completa</h3><p>Avaliação estratégica em 7 pilares, cruzando contexto, técnica, tática, físico, mente, nutrição e família.</p></div>
-      <div class="step"><div class="num">4</div><h3>Entrega do plano</h3><p>Reunião de entrega do relatório personalizado, com prioridades da temporada e planos de curto, médio e longo prazo.</p></div>
+    <div class="flow">
+      <div class="flow-step glass-card"><div class="n">01</div><h3>Grupo oficial</h3><p>Um grupo exclusivo no WhatsApp com o atleta, a família quando for o caso, e a equipe do Base de Campeão.</p></div>
+      <div class="flow-step glass-card"><div class="n">02</div><h3>Reunião de diagnóstico</h3><p>Conversa individual para entender histórico, objetivos, rotina, clube, desafios e dúvidas.</p></div>
+      <div class="flow-step glass-card"><div class="n">03</div><h3>Análise completa</h3><p>Avaliação em 7 pilares, com análise de desempenho dos jogos e leitura do momento de carreira.</p></div>
+      <div class="flow-step glass-card"><div class="n">04</div><h3>Entrega do plano</h3><p>Reunião de entrega com prioridades da temporada, plano de treino e plano de curto, médio e longo prazo.</p></div>
     </div>
-  </div>
-</section>
-
-<!-- PILARES -->
-<section class="pillars">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow dark">A profundidade da análise</span>
-      <h2>Olhamos o atleta inteiro. Não só a bola.</h2>
-    </div>
-    <div class="p-grid">
-      <div class="pillar"><div class="pn">01</div><h3>Contexto</h3><p>Idade, momento de carreira, ambiente, rotina e planejamento de temporada.</p></div>
-      <div class="pillar"><div class="pn">02</div><h3>Técnico</h3><p>Fundamentos, características e prioridades de desenvolvimento.</p></div>
-      <div class="pillar"><div class="pn">03</div><h3>Tático</h3><p>Leitura de jogo, tomada de decisão, posicionamento e inteligência.</p></div>
-      <div class="pillar"><div class="pn">04</div><h3>Físico</h3><p>Crescimento, maturação, carga, recuperação e composição corporal.</p></div>
-      <div class="pillar"><div class="pn">05</div><h3>Mental</h3><p>Confiança, competitividade, concentração e comportamento.</p></div>
-      <div class="pillar"><div class="pn">06</div><h3>Nutricional</h3><p>Hábitos, hidratação, recuperação e organização alimentar.</p></div>
-      <div class="pillar wide"><div class="pn">07</div><h3>Familiar</h3><p>O pilar que muda tudo: o papel da família, o ambiente, a comunicação e o processo de tomada de decisão em casa.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ENTREGA -->
-<section>
-  <div class="wrap">
-    <div class="deliv-grid">
+    <div class="glass-card flow-next">
+      <div class="icon-wrap"><i data-lucide="refresh-cw"></i></div>
       <div>
-        <span class="eyebrow dark">O que a família recebe</span>
-        <div class="sec-head" style="margin-bottom:24px"><h2>Um relatório que você guarda pra vida toda</h2></div>
-        <ul class="deliv-list">
-          <li>Diagnóstico geral do momento do atleta</li>
-          <li>Principais pontos fortes e pontos de atenção</li>
-          <li>Perfil comportamental do atleta</li>
-          <li>Prioridades da temporada</li>
-          <li>Plano de ação de curto, médio e longo prazo</li>
-          <li>Orientações específicas para a família</li>
-          <li>Reunião de entrega pra explicar cada passo</li>
-        </ul>
+        <h3>Depois do plano, começa a parte mais importante: a execução</h3>
+        <p>Todo mês a equipe acompanha a evolução, analisa os jogos, ajusta o plano de treino e apoia as decisões de carreira da temporada.</p>
       </div>
-      <div class="deliv-pages" aria-hidden="true">
-        <div class="pg pg2"><div class="band"></div><div class="inner"><div class="l" style="width:70%"></div><div class="l"></div><div class="l" style="width:85%"></div><div class="l" style="width:55%"></div><div class="l"></div></div></div>
-        <div class="pg pg1"><div class="band"></div><div class="inner"><div class="l" style="width:80%"></div><div class="l"></div><div class="l" style="width:60%"></div><div class="l"></div><div class="l" style="width:75%"></div><div class="l" style="width:50%"></div></div></div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:48px">
-      <a href="https://www.basedecampeao.com.br/pdi" class="btn">Quero o diagnóstico do meu filho</a>
     </div>
   </div>
 </section>
 
-<!-- CASOS -->
-<section class="cases">
+<!-- ================= 7 PILARES ================= -->
+<section class="sc-section alt">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Casos reais</span>
-      <h2>Cada atleta é um plano diferente</h2>
+    <div class="section-head">
+      <span class="badge badge-gold">A profundidade da análise</span>
+      <h2 class="section-title">Olhamos o atleta inteiro.<br>Não só a bola.</h2>
     </div>
-    <div class="c-grid">
-      <div class="case"><div class="age">8 anos</div><div class="loc">Brasília / DF</div><p>Um menino apaixonado pela bola. O plano foi proteger a infância e construir a base técnica com leveza, mantendo o futebol como espaço de prazer, sem transformar em obrigação.</p></div>
-      <div class="case"><div class="age">14 anos</div><div class="loc">Escola de futebol</div><p>Físico e técnica acima da média, mas travado pelo medo de errar. O foco: destravar a intensidade competitiva e transformar apoio da família em estrutura.</p></div>
-      <div class="case"><div class="age">14 anos</div><div class="loc">Londres, Inglaterra</div><p>Retomada segura após lesão, com rotina física e mental estruturada. Prova de que o PDI funciona à distância, inclusive fora do Brasil.</p></div>
+    <div class="pillars7">
+      <div class="p7 glass-card"><div class="n">01</div><h3>Contexto</h3><p>Idade, momento de carreira, ambiente, rotina e planejamento de temporada.</p></div>
+      <div class="p7 glass-card"><div class="n">02</div><h3>Técnico</h3><p>Fundamentos, características e prioridades de desenvolvimento.</p></div>
+      <div class="p7 glass-card"><div class="n">03</div><h3>Tático</h3><p>Leitura de jogo, tomada de decisão, posicionamento e inteligência.</p></div>
+      <div class="p7 glass-card"><div class="n">04</div><h3>Físico</h3><p>Crescimento, maturação, carga, recuperação e composição corporal.</p></div>
+      <div class="p7 glass-card"><div class="n">05</div><h3>Mental</h3><p>Confiança, competitividade, concentração e comportamento.</p></div>
+      <div class="p7 glass-card"><div class="n">06</div><h3>Nutricional</h3><p>Hábitos, hidratação, recuperação e organização alimentar.</p></div>
+      <div class="p7 wide glass-card"><div class="n">07</div><h3>Familiar e ambiente</h3><p>O pilar que muda tudo: o papel da família, o ambiente, a comunicação e o processo de tomada de decisão.<br>Para o atleta adulto, a rede de apoio que sustenta a carreira.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PRA QUEM É -->
-<section>
+<!-- ================= CASOS ================= -->
+<section class="sc-section">
   <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow dark">Antes de decidir</span>
-      <h2>O PDI é pra você?</h2>
+    <div class="section-head">
+      <span class="badge badge-cyan">Casos reais</span>
+      <h2 class="section-title">Cada atleta é um plano diferente</h2>
     </div>
-    <div class="fit-grid">
-      <div class="fit-col yes">
-        <h3>É pra famílias que…</h3>
-        <ul>
-          <li>Querem participar ativamente da formação do filho</li>
-          <li>Buscam tomar decisões com mais segurança</li>
-          <li>Entendem que desenvolvimento é um processo contínuo</li>
-          <li>Querem que o atleta evolua de forma organizada</li>
-          <li>Valorizam o filho como pessoa antes do atleta</li>
-        </ul>
-      </div>
-      <div class="fit-col no">
-        <h3>Não é pra quem…</h3>
-        <ul>
-          <li>Procura atalho ou fórmula mágica</li>
-          <li>Espera garantia de contrato ou peneira</li>
-          <li>Quer resultado imediato sem processo</li>
-          <li>Não pretende se envolver na jornada</li>
-        </ul>
-      </div>
+    <div class="cases">
+      <div class="case glass-card"><div class="tags"><span class="badge badge-gold">8 anos</span><span class="badge badge-muted">Brasília / DF</span></div><p>Um menino apaixonado pela bola.<br>O plano foi proteger a infância e construir a base técnica com leveza, mantendo o futebol como espaço de prazer, sem transformar em obrigação.</p></div>
+      <div class="case glass-card"><div class="tags"><span class="badge badge-gold">14 anos</span><span class="badge badge-muted">Escola de futebol</span></div><p>Físico e técnica acima da média, mas travado pelo medo de errar.<br>O foco foi destravar a intensidade competitiva e transformar o apoio da família em estrutura.</p></div>
+      <div class="case glass-card"><div class="tags"><span class="badge badge-gold">14 anos</span><span class="badge badge-muted">Londres, Inglaterra</span></div><p>Retomada segura após lesão, com rotina física e mental estruturada.<br>Prova de que o PDI funciona à distância, inclusive fora do Brasil.</p></div>
     </div>
+  </div>
   </div>
 </section>
 
-<!-- OFERTA -->
-<section class="offer" id="investimento">
+<!-- ================= FORMULÁRIO ================= -->
+<section class="sc-section alt" id="formulario">
+  <div class="wrap form-wrap">
+    <div class="form-side">
+      <span class="badge badge-gold">Comece pelo seu PDI</span>
+      <h2>Conte um pouco sobre o <span class="hl-gold">momento do atleta</span></h2>
+      <p>Preencha o formulário.<br>Nossa equipe analisa as respostas e entra em contato pelo WhatsApp para apresentar o formato ideal e os próximos passos.</p>
+      <ul>
+        <li><i data-lucide="clock"></i> Leva cerca de 3 minutos</li>
+        <li><i data-lucide="user-check"></i> Cada PDI é feito com atenção individual, por isso as vagas por mês são limitadas</li>
+        <li><i data-lucide="message-circle"></i> O contato acontece pelo WhatsApp informado</li>
+      </ul>
+      <a href="https://wa.me/5551996917344?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." class="btn btn-outline" data-gtm="form-whatsapp"><i data-lucide="message-circle"></i> Prefiro falar direto com o time</a>
+    </div>
+
+    <form class="glass-card form-card" id="pdi-form" action="https://formspree.io/f/maeqlwoy" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="Novo formulário PDI">
+      <input type="hidden" name="origem" value="LP PDI">
+      <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="f-row">
+        <span class="f-label">Quem está preenchendo? <span class="req">*</span></span>
+        <div class="seg">
+          <input type="radio" name="perfil" id="perfil-familia" value="Família (pai, mãe ou responsável)" checked>
+          <label for="perfil-familia"><i data-lucide="users"></i> Sou da família</label>
+          <input type="radio" name="perfil" id="perfil-atleta" value="O próprio atleta">
+          <label for="perfil-atleta"><i data-lucide="user"></i> Sou o atleta</label>
+        </div>
+      </div>
+
+      <div class="f-row">
+        <label class="f-label" for="f-nome"><span data-fam="Nome do responsável" data-atl="Seu nome completo">Nome do responsável</span> <span class="req">*</span></label>
+        <input class="f-input" id="f-nome" name="nome" type="text" autocomplete="name" required>
+      </div>
+
+      <div class="f-row two">
+        <div>
+          <label class="f-label" for="f-whats">WhatsApp <span class="req">*</span></label>
+          <input class="f-input" id="f-whats" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="(51) 99999-9999" required>
+        </div>
+        <div>
+          <label class="f-label" for="f-email">E-mail</label>
+          <input class="f-input" id="f-email" name="email" type="email" autocomplete="email" placeholder="seuemail@exemplo.com">
+        </div>
+      </div>
+
+      <div class="f-row two">
+        <div id="row-atleta">
+          <label class="f-label" for="f-atleta">Nome do atleta <span class="req">*</span></label>
+          <input class="f-input" id="f-atleta" name="nome_atleta" type="text" required>
+        </div>
+        <div>
+          <label class="f-label" for="f-idade"><span data-fam="Idade do atleta" data-atl="Sua idade">Idade do atleta</span> <span class="req">*</span></label>
+          <input class="f-input" id="f-idade" name="idade_atleta" type="number" min="5" max="45" inputmode="numeric" required>
+        </div>
+      </div>
+
+      <div class="f-row two">
+        <div>
+          <label class="f-label" for="f-posicao">Posição</label>
+          <select class="f-select" id="f-posicao" name="posicao">
+            <option value="">Selecione</option>
+            <option>Goleiro</option><option>Lateral</option><option>Zagueiro</option><option>Volante</option><option>Meia</option><option>Ponta</option><option>Atacante</option><option>Ainda não definida</option>
+          </select>
+        </div>
+        <div>
+          <label class="f-label" for="f-momento">Momento atual</label>
+          <select class="f-select" id="f-momento" name="momento">
+            <option value="">Selecione</option>
+            <option>Escolinha ou projeto social</option><option>Categoria de base de clube</option><option>Futebol profissional</option><option>Sem clube no momento</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="f-row">
+        <label class="f-label" for="f-desafio">Qual é a maior dificuldade ou desafio hoje na jornada do futebol? <span class="req">*</span></label>
+        <textarea class="f-area" id="f-desafio" name="maior_desafio" placeholder="Exemplo: ter mais intensidade, ansiedade na hora do jogo, oportunidade em clubes" required></textarea>
+      </div>
+
+      <div class="f-row">
+        <label class="f-label" for="f-evolucao"><span data-fam="Hoje, você sente que seu filho está evoluindo como poderia? Por quê?" data-atl="Hoje, você sente que está evoluindo como poderia? Por quê?">Hoje, você sente que seu filho está evoluindo como poderia? Por quê?</span> <span class="req">*</span></label>
+        <textarea class="f-area" id="f-evolucao" name="evolucao" required></textarea>
+      </div>
+
+      <div class="f-row">
+        <label class="f-label" for="f-espera">O que você espera ao buscar esse direcionamento? <span class="req">*</span></label>
+        <textarea class="f-area" id="f-espera" name="expectativa" required></textarea>
+      </div>
+
+      <div class="f-row">
+        <label class="f-label" for="f-invest">Quanto você está disposto a investir por mês no desenvolvimento <span data-fam="do atleta" data-atl="da sua carreira">do atleta</span>? <span class="req">*</span></label>
+        <select class="f-select" id="f-invest" name="investimento_mensal" required>
+          <option value="">Selecione uma faixa</option>
+          <option>Até R$ 150 por mês</option>
+          <option>De R$ 150 a R$ 300 por mês</option>
+          <option>De R$ 300 a R$ 500 por mês</option>
+          <option>Acima de R$ 500 por mês</option>
+          <option>Ainda não sei, quero entender as opções</option>
+        </select>
+        <p class="f-help">Nos ajuda a indicar o formato de acompanhamento mais adequado.</p>
+      </div>
+
+      <button type="submit" class="btn btn-gold f-submit" id="f-submit"><i data-lucide="send"></i> Enviar e falar com a equipe</button>
+      <p class="f-note">Ao enviar, aguarde: nossa equipe entra em contato pelo WhatsApp.</p>
+      <div class="f-error" id="f-error" role="alert">Não conseguimos enviar agora.<br>Tente de novo em instantes ou <a href="https://wa.me/5551996917344?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20PDI.">fale com o time pelo WhatsApp</a>.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sc-section" id="faq">
   <div class="wrap">
-    <span class="eyebrow">O investimento</span>
-    <div class="sec-head center" style="margin-bottom:34px"><h2>Comece pelo diagnóstico</h2></div>
-    <div class="price-wrap">
-      <div class="price-card">
-        <span class="ptag main">Etapa 1</span>
-        <div class="plabel">Diagnóstico PDI</div>
-        <div class="pval"><span class="cur">R$</span>597</div>
-        <div class="pnote">Reunião de diagnóstico, análise nos 7 pilares, relatório personalizado e reunião de entrega do plano.</div>
-      </div>
-      <div class="price-card">
-        <span class="ptag main">Etapa 2</span>
-        <div class="plabel">Acompanhamento BDC</div>
-        <div class="pval"><span class="cur">R$</span>197<span class="per">/mês</span></div>
-        <ul class="pfeat">
-          <li>Reunião mensal de evolução do atleta</li>
-          <li>Análise de desempenho individual dos jogos</li>
-          <li>Ajustes contínuos do plano</li>
-          <li>Suporte estratégico nas decisões da temporada</li>
-        </ul>
-      </div>
-    </div>
-    <p class="stage-note">Depois que o plano fica pronto, começa a fase mais importante: a execução.</p>
-    <div class="offer-cta">
-      <div class="cta-row" style="justify-content:center">
-        <a href="https://www.basedecampeao.com.br/pdi" class="btn">Quero começar o diagnóstico</a>
-        <a href="https://wa.me/5551998800521?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." class="btn-ghost">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-          Tenho dúvidas, quero falar com um especialista
-        </a>
-      </div>
-      <span class="btn-sub light" style="text-align:center">Você preenche um formulário rápido e a nossa equipe entra em contato pra dar o próximo passo.</span>
-    </div>
-    <p class="anchor">O custo de errar de clube, sobrecarregar o menino ou perder uma janela de desenvolvimento é muito maior do que o de ter clareza desde agora.</p>
-    <p class="guarantee">Vagas limitadas por mês, porque cada diagnóstico é feito com atenção individual.</p>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section>
-  <div class="narrow">
-    <div class="sec-head center">
-      <span class="eyebrow dark">Perguntas frequentes</span>
-      <h2>Ainda com dúvida?</h2>
+    <div class="section-head">
+      <span class="badge badge-cyan">Dúvidas frequentes</span>
+      <h2 class="section-title">Ainda com dúvida?</h2>
     </div>
     <div class="faq">
-      <details><summary>A partir de que idade funciona?</summary><p>O PDI atende atletas a partir dos 8 anos. O plano é sempre ajustado à fase: pra criança pequena, o foco é proteger a relação com o jogo; pra adolescente, entra estrutura, intensidade e planejamento de carreira.</p></details>
-      <details><summary>Meu filho não está em clube. Serve pra ele?</summary><p>Sim. O diagnóstico avalia o momento atual seja qual for o ambiente: projeto social, escolinha ou clube. E ajuda inclusive a decidir os próximos passos.</p></details>
-      <details><summary>Vocês atendem à distância?</summary><p>Atendemos. Todo o processo pode ser feito online, incluindo famílias fora do Brasil. As reuniões acontecem por vídeo e o grupo fica ativo no WhatsApp.</p></details>
-      <details><summary>O que acontece depois do diagnóstico?</summary><p>Com o plano em mãos, o atleta entra na Etapa 2: o Acompanhamento BDC. Todo mês a equipe avalia a evolução, faz a análise de desempenho individual dos jogos e ajusta as prioridades do plano. É o que garante que o plano saia do papel. O investimento é de R$ 197 por mês, sem fidelidade.</p></details>
-      <details><summary>Quanto tempo até receber o plano?</summary><p>O mês de diagnóstico é dedicado a entender o atleta por completo. A entrega do relatório acontece ao final desse primeiro ciclo, em reunião com a família.</p></details>
-      <details><summary>Os pais participam?</summary><p>Sim, e isso é essencial. A família é um dos 7 pilares de análise e recebe orientações específicas. O PDI foi feito pra caminhar junto com vocês.</p></details>
-      <details><summary>Isso substitui o treino do clube?</summary><p>Não substitui. O PDI organiza e complementa a formação, dando direção estratégica pra que cada decisão esteja alinhada ao momento do atleta.</p></details>
-      <details><summary>Como funciona pra começar?</summary><p>Você preenche um formulário rápido com os dados do atleta. Nossa equipe entra em contato, confirma sua vaga do mês e cria o grupo oficial pra iniciar o diagnóstico.</p></details>
+      <details><summary>O que exatamente o PDI entrega?</summary><p>Três frentes juntas, para um atleta só: gestão de carreira, análise de desempenho individual e plano de treino.<br>Tudo começa por um diagnóstico em 7 pilares e segue com acompanhamento mensal da execução.</p></details>
+      <details><summary>O PDI é para a família ou para o atleta?</summary><p>O PDI é do atleta.<br>Quando o atleta é menor de idade, a família participa de todo o processo e faz a inscrição.<br>Atletas maiores de idade, inclusive profissionais, contratam e participam diretamente.</p></details>
+      <details><summary>Vocês atendem atletas profissionais?</summary><p>Sim.<br>O PDI atende atletas da base ao profissional, em qualquer momento da carreira: formação, transição, categorias inferiores ou futebol profissional.</p></details>
+      <details><summary>A partir de que idade funciona?</summary><p>A partir dos 8 anos.<br>O plano é sempre ajustado à fase: para a criança, o foco é proteger a relação com o jogo; para o adolescente, entram estrutura, intensidade e planejamento de carreira; para o adulto, desempenho e gestão de carreira.</p></details>
+      <details><summary>Vocês atendem à distância?</summary><p>Sim.<br>Todo o processo pode ser feito online, inclusive para atletas fora do Brasil.<br>As reuniões acontecem por vídeo e o grupo fica ativo no WhatsApp.</p></details>
+      <details><summary>Isso substitui o treino do clube?</summary><p>Não.<br>O PDI organiza e complementa o trabalho do clube, dando direção para que cada treino, jogo e decisão esteja alinhado ao momento do atleta.</p></details>
+      <details><summary>Qual é o investimento?</summary><p>O investimento depende do formato de acompanhamento mais adequado para cada atleta.<br>Depois do formulário, nossa equipe apresenta as opções na conversa pelo WhatsApp.</p></details>
+      <details><summary>Como faço para começar?</summary><p>Preencha o formulário desta página.<br>A equipe analisa as respostas, entra em contato, confirma a vaga do mês e cria o grupo oficial para iniciar o diagnóstico.</p></details>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="final">
-  <div class="wrap">
-    <span class="eyebrow" style="display:block;margin-bottom:20px">Base de Campeão</span>
-    <h2>A formação do seu filho está acontecendo <span class="gold">agora</span>.</h2>
-    <p>Com ou sem plano, o tempo passa igual. A diferença está em conduzir esse caminho com clareza, consciência e direção.</p>
-    <div class="cta-row">
-      <a href="https://www.basedecampeao.com.br/pdi" class="btn">Quero o diagnóstico do meu filho</a>
-      <a href="https://wa.me/5551998800521?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." class="btn-ghost">
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-        Falar com um especialista
-      </a>
-    </div>
-    <div class="scarcity">Abrimos apenas um número limitado de diagnósticos por mês</div>
+<!-- ================= CTA FINAL ================= -->
+<section class="final-cta">
+  <div class="wrap wrap-narrow">
+    <span class="badge badge-gold">Gestão de carreira para o novo futebol</span>
+    <h2>A trajetória está acontecendo agora.<br><span class="hl-gold">Com plano, ela tem direção.</span></h2>
+    <p>Com ou sem plano, o tempo passa igual.<br>A diferença está em conduzir o caminho com clareza e método.</p>
+    <a href="#formulario" class="btn btn-gold" data-gtm="final-formulario"><i data-lucide="file-text"></i> Quero começar meu PDI</a>
   </div>
 </section>
 
-<footer>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
   <div class="wrap">
-    <img src="logo-bdc.png" alt="Base de Campeão" class="footer-logo">
-    <div>Preparar a família. Formar o atleta. Conectar com a oportunidade.</div>
-    <div style="margin-top:10px">Base de Campeão Ensino de Esportes LTDA · <a href="https://www.basedecampeao.com.br/pdi">Começar agora</a></div>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/logo-128.webp" width="126" height="128" alt="Base de Campeão">
+        <p style="font-size: 0.9rem; line-height: 1.6;">Gestão de carreira para o novo futebol.<br>Fazer um futebol melhor, com melhores pessoas.</p>
+      </div>
+      <div>
+        <h4>Programas</h4>
+        <ul class="footer-links">
+          <li><a href="https://novobdc.basedecampeao.com.br/scout">BDC Scout</a></li>
+          <li><a href="https://novobdc.basedecampeao.com.br/comunidade">Comunidade de Desenvolvimento</a></li>
+          <li><a href="/">PDI</a></li>
+          <li><a href="https://formandocampeoes.basedecampeao.com.br/">Formando Campeões</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Base de Campeão</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.basedecampeao.com.br/members-area"><i data-lucide="log-in"></i> Área do aluno</a></li>
+          <li><a href="https://novobdc.basedecampeao.com.br/">Página inicial</a></li>
+          <li><a href="https://desenvolvimento.basedecampeao.com.br/">Manuais do Campeão</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Fale com a gente</h4>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/5551996917344?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI."><i data-lucide="message-square"></i> WhatsApp</a></li>
+          <li><a href="https://instagram.com/basedecampeao"><i data-lucide="camera"></i> @basedecampeao</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Base de Campeão Ensino de Esportes LTDA.<br>Todos os direitos reservados.</div>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/5551998800521?text=Ol%C3%A1!%20Tenho%20d%C3%BAvidas%20sobre%20o%20PDI." aria-label="Falar com um especialista no WhatsApp" title="Falar com um especialista">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.6.1-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-</a>
+<!-- ================= CTA FIXO (MOBILE) ================= -->
+<div class="sticky-cta" id="sticky-cta">
+  <div class="sp"><b>PDI</b>Plano individual para o atleta</div>
+  <a href="#formulario" class="btn btn-gold" data-gtm="sticky-formulario">Quero meu PDI</a>
+</div>
 
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function track(ev, data) { window.dataLayer.push(Object.assign({ event: ev }, data || {})); }
+  function renderIcons() { if (window.lucide) lucide.createIcons(); }
+  document.addEventListener('DOMContentLoaded', renderIcons);
+
+  const header = document.getElementById('header');
+  const sticky = document.getElementById('sticky-cta');
+  const formSec = document.getElementById('formulario');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+    const r = formSec.getBoundingClientRect();
+    sticky.classList.toggle('show', window.scrollY > 600 && !(r.top < window.innerHeight && r.bottom > 0));
+  }, { passive: true });
+
+  (function () {
+    const canvas = document.getElementById('hero-canvas'); if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+    window.addEventListener('resize', resize); resize();
+    const ps = Array.from({ length: 40 }, () => ({ x: Math.random() * canvas.width, y: Math.random() * canvas.height, s: Math.random() * 2 + 1, vx: (Math.random() - .5) * .45, vy: (Math.random() - .5) * .45, o: Math.random() * .45 + .1 }));
+    function frame() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ps.forEach(p => {
+        if (!reduce) { p.x += p.vx; p.y += p.vy; if (p.x < 0 || p.x > canvas.width) p.vx *= -1; if (p.y < 0 || p.y > canvas.height) p.vy *= -1; }
+        ctx.fillStyle = `rgba(219, 167, 65, ${p.o})`; ctx.beginPath(); ctx.arc(p.x, p.y, p.s, 0, Math.PI * 2); ctx.fill();
+      });
+      if (!reduce) requestAnimationFrame(frame);
+    }
+    frame();
+  })();
+
+  // Abas Família x Atleta
+  function setTab(name) {
+    document.querySelectorAll('.tab').forEach(t => { const on = t.dataset.tab === name; t.classList.toggle('active', on); t.setAttribute('aria-selected', on); });
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.id === 'tab-' + name));
+    const radio = document.getElementById(name === 'atleta' ? 'perfil-atleta' : 'perfil-familia');
+    if (radio && !radio.checked) { radio.checked = true; applyPerfil(); }
+    track('pdi_versao', { versao: name });
+  }
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => setTab(t.dataset.tab)));
+  document.querySelectorAll('[data-tab-go]').forEach(a => a.addEventListener('click', () => setTab(a.dataset.tabGo)));
+
+  // Formulário adaptado a quem preenche
+  const form = document.getElementById('pdi-form');
+  const rowAtleta = document.getElementById('row-atleta');
+  const inAtleta = document.getElementById('f-atleta');
+  function applyPerfil() {
+    const atleta = document.getElementById('perfil-atleta').checked;
+    form.querySelectorAll('[data-fam]').forEach(el => { el.textContent = atleta ? el.dataset.atl : el.dataset.fam; });
+    rowAtleta.style.display = atleta ? 'none' : '';
+    rowAtleta.parentElement.style.gridTemplateColumns = atleta ? '1fr' : '';
+    inAtleta.required = !atleta;
+  }
+  form.querySelectorAll('input[name="perfil"]').forEach(r => r.addEventListener('change', applyPerfil));
+  applyPerfil();
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const err = document.getElementById('f-error'); err.style.display = 'none';
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    const atleta = document.getElementById('perfil-atleta').checked;
+    if (atleta) inAtleta.value = document.getElementById('f-nome').value;
+    const btn = document.getElementById('f-submit'); btn.disabled = true; btn.lastChild.textContent = ' Enviando...';
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+      if (!res.ok) throw new Error('falha');
+      track('generate_lead', { produto: 'PDI', perfil: atleta ? 'atleta' : 'familia', investimento: document.getElementById('f-invest').value });
+      const nome = (document.getElementById('f-nome').value || '').trim().split(' ')[0];
+      window.location.href = '/obrigado?nome=' + encodeURIComponent(nome) + '&perfil=' + (atleta ? 'atleta' : 'familia');
+    } catch (ex) {
+      err.style.display = 'block'; btn.disabled = false; btn.lastChild.textContent = ' Enviar e falar com a equipe';
+    }
+  });
+
+  document.querySelectorAll('[data-gtm]').forEach(a => a.addEventListener('click', () => track('cta_click', { cta: a.dataset.gtm })));
+  document.querySelectorAll('.faq details').forEach(d => d.addEventListener('toggle', () => { if (d.open) track('faq_aberta', { pergunta: d.querySelector('summary').innerText }); }));
+</script>
 </body>
 </html>
